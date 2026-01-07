@@ -1,49 +1,12 @@
-const storageKey = 'participantName';
-
-const saveName = (value) => {
-  localStorage.setItem(storageKey, value);
-};
-
-const getName = () => localStorage.getItem(storageKey) || '';
-
-const goToChapters = () => {
-  window.location.href = 'chapters.html';
-};
-
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.body.dataset.page;
 
   if (page === 'home') {
-    const nameInput = document.getElementById('name-input');
-    const startBtn = document.getElementById('start-btn');
     const heroCard = document.getElementById('hero-card');
-    const error = document.getElementById('name-error');
-
-    const validateName = () => {
-      const value = nameInput.value.trim();
-      startBtn.disabled = value === '';
-      if (value) {
-        error.textContent = '';
-      }
-      return value;
-    };
-
-    nameInput.value = getName();
-    validateName();
-
-    const attemptProceed = () => {
-      const value = validateName();
-      if (!value) {
-        error.textContent = 'Please enter your name before continuing.';
-        return;
-      }
-      saveName(value);
-      goToChapters();
-    };
-
-    startBtn.addEventListener('click', attemptProceed);
-    heroCard.addEventListener('click', attemptProceed);
-    nameInput.addEventListener('input', validateName);
+    
+    heroCard.addEventListener('click', () => {
+      window.location.href = 'chapters.html';
+    });
   }
 
   if (page === 'chapters') {
