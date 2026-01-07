@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis – Chapter Two</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p class="name-banner" id="name-banner"></p>
+          <h1>Chapter Two: Data Collection & Preparation</h1>
+          <p>Learn how to communicate insights through effective charts.</p>
+        </header>
+        <section class="quiz-questions">
+  <article class="question" data-answer="b">
+    <h2>21. Primary data is:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q21" value="a" /> Downloaded from databases</label>
+      <label><input type="radio" name="q21" value="b" /> Collected firsthand</label>
+      <label><input type="radio" name="q21" value="c" /> Already processed</label>
+      <label><input type="radio" name="q21" value="d" /> Aggregated data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Primary data is gathered directly by the researcher.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>22. Kaggle datasets are an example of:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q22" value="a" /> Primary data</label>
+      <label><input type="radio" name="q22" value="b" /> Experimental data</label>
+      <label><input type="radio" name="q22" value="c" /> Secondary data</label>
+      <label><input type="radio" name="q22" value="d" /> Survey data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">They already exist and are reused.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>23. JSON files are classified as:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q23" value="a" /> Structured</label>
+      <label><input type="radio" name="q23" value="b" /> Semi-structured</label>
+      <label><input type="radio" name="q23" value="c" /> Unstructured</label>
+      <label><input type="radio" name="q23" value="d" /> Time-series</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">JSON has structure but not strict tables.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>24. Which issue most affects data validity?</h2>
+    <div class="choices">
+      <label><input type="radio" name="q24" value="a" /> Noise</label>
+      <label><input type="radio" name="q24" value="b" /> Duplicates</label>
+      <label><input type="radio" name="q24" value="c" /> Bias</label>
+      <label><input type="radio" name="q24" value="d" /> Normalization</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Biased samples lead to misleading conclusions.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>25. SQL databases are best for:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q25" value="a" /> Image storage</label>
+      <label><input type="radio" name="q25" value="b" /> Relational querying</label>
+      <label><input type="radio" name="q25" value="c" /> Text mining</label>
+      <label><input type="radio" name="q25" value="d" /> Visualization</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">SQL is optimized for structured relational data.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>26. Median is preferred for filling missing values when data is:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q26" value="a" /> Symmetric</label>
+      <label><input type="radio" name="q26" value="b" /> Skewed</label>
+      <label><input type="radio" name="q26" value="c" /> Binary</label>
+      <label><input type="radio" name="q26" value="d" /> Categorical</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Median is resistant to outliers.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>27. Outliers should always be removed.</h2>
+    <div class="choices">
+      <label><input type="radio" name="q27" value="a" /> True</label>
+      <label><input type="radio" name="q27" value="b" /> False</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Outliers may contain important information.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>28. Standardization results in:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q28" value="a" /> Values between 0 and 1</label>
+      <label><input type="radio" name="q28" value="b" /> Mean = 0 and SD = 1</label>
+      <label><input type="radio" name="q28" value="c" /> Removal of outliers</label>
+      <label><input type="radio" name="q28" value="d" /> Integer values</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">This is the definition of standardization.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>29. Why must categorical data be encoded?</h2>
+    <div class="choices">
+      <label><input type="radio" name="q29" value="a" /> To reduce size</label>
+      <label><input type="radio" name="q29" value="b" /> To remove bias</label>
+      <label><input type="radio" name="q29" value="c" /> Because models require numeric input</label>
+      <label><input type="radio" name="q29" value="d" /> To visualize faster</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Most ML algorithms only accept numbers.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>30. Feature engineering mainly aims to:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q30" value="a" /> Clean data</label>
+      <label><input type="radio" name="q30" value="b" /> Improve model performance</label>
+      <label><input type="radio" name="q30" value="c" /> Reduce noise</label>
+      <label><input type="radio" name="q30" value="d" /> Store data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Better features lead to better models.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>31. Different date formats represent:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q31" value="a" /> Noise</label>
+      <label><input type="radio" name="q31" value="b" /> Outliers</label>
+      <label><input type="radio" name="q31" value="c" /> Inconsistent formatting</label>
+      <label><input type="radio" name="q31" value="d" /> Missing data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Formats must be standardized.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>32. Time-series data must include:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q32" value="a" /> Categories</label>
+      <label><input type="radio" name="q32" value="b" /> Labels</label>
+      <label><input type="radio" name="q32" value="c" /> Time dimension</label>
+      <label><input type="radio" name="q32" value="d" /> Images</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Time is essential in time-series data.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>33. Noise refers to:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q33" value="a" /> Missing data</label>
+      <label><input type="radio" name="q33" value="b" /> Duplicate rows</label>
+      <label><input type="radio" name="q33" value="c" /> Random irrelevant variation</label>
+      <label><input type="radio" name="q33" value="d" /> Extreme values</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Noise hides real patterns.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>34. Best tool for querying large databases:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q34" value="a" /> Excel</label>
+      <label><input type="radio" name="q34" value="b" /> SQL</label>
+      <label><input type="radio" name="q34" value="c" /> Tableau</label>
+      <label><input type="radio" name="q34" value="d" /> Power BI</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">SQL is optimized for queries.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>35. Data integration means:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q35" value="a" /> Cleaning data</label>
+      <label><input type="radio" name="q35" value="b" /> Combining data sources</label>
+      <label><input type="radio" name="q35" value="c" /> Encoding categories</label>
+      <label><input type="radio" name="q35" value="d" /> Visualizing data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Integration merges multiple sources.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>36. GDPR focuses on:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q36" value="a" /> Data speed</label>
+      <label><input type="radio" name="q36" value="b" /> Data storage</label>
+      <label><input type="radio" name="q36" value="c" /> Data privacy</label>
+      <label><input type="radio" name="q36" value="d" /> Data visualization</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">GDPR regulates personal data usage.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>37. Sensor failure usually causes:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q37" value="a" /> Bias</label>
+      <label><input type="radio" name="q37" value="b" /> Missing values</label>
+      <label><input type="radio" name="q37" value="c" /> Noise</label>
+      <label><input type="radio" name="q37" value="d" /> Encoding errors</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Sensors may stop recording data.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>38. Removing duplicates improves:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q38" value="a" /> Volume</label>
+      <label><input type="radio" name="q38" value="b" /> Quality</label>
+      <label><input type="radio" name="q38" value="c" /> Bias</label>
+      <label><input type="radio" name="q38" value="d" /> Security</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Duplicates distort analysis.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>39. Normalization is critical for:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q39" value="a" /> Tree models</label>
+      <label><input type="radio" name="q39" value="b" /> Distance-based models</label>
+      <label><input type="radio" name="q39" value="c" /> Visualization</label>
+      <label><input type="radio" name="q39" value="d" /> Reporting</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Distance metrics are scale-sensitive.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>40. Web scraping usually produces:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q40" value="a" /> Clean data</label>
+      <label><input type="radio" name="q40" value="b" /> Structured data</label>
+      <label><input type="radio" name="q40" value="c" /> Unstructured data</label>
+      <label><input type="radio" name="q40" value="d" /> Labeled data</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Web data is often messy text.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>41. ETL stands for:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q41" value="a" /> Encode, Transform, Load</label>
+      <label><input type="radio" name="q41" value="b" /> Extract, Transform, Load</label>
+      <label><input type="radio" name="q41" value="c" /> Explore, Test, Learn</label>
+      <label><input type="radio" name="q41" value="d" /> Evaluate, Train, Label</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Standard data pipeline process.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>42. Which step ensures ethical data handling?</h2>
+    <div class="choices">
+      <label><input type="radio" name="q42" value="a" /> Visualization</label>
+      <label><input type="radio" name="q42" value="b" /> Cleaning</label>
+      <label><input type="radio" name="q42" value="c" /> Privacy compliance</label>
+      <label><input type="radio" name="q42" value="d" /> Encoding</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Ethics focus on privacy and consent.</p>
+  </article>
+  <article class="question" data-answer="d">
+    <h2>43. Which is NOT a data collection method?</h2>
+    <div class="choices">
+      <label><input type="radio" name="q43" value="a" /> Survey</label>
+      <label><input type="radio" name="q43" value="b" /> Interview</label>
+      <label><input type="radio" name="q43" value="c" /> Observation</label>
+      <label><input type="radio" name="q43" value="d" /> Normalization</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Normalization is preprocessing.</p>
+  </article>
+  <article class="question" data-answer="c">
+    <h2>44. Customer reviews text is:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q44" value="a" /> Structured</label>
+      <label><input type="radio" name="q44" value="b" /> Semi-structured</label>
+      <label><input type="radio" name="q44" value="c" /> Unstructured</label>
+      <label><input type="radio" name="q44" value="d" /> Time-series</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Free text has no fixed structure.</p>
+  </article>
+  <article class="question" data-answer="b">
+    <h2>45. Poor data preparation mainly leads to:</h2>
+    <div class="choices">
+      <label><input type="radio" name="q45" value="a" /> Slower storage</label>
+      <label><input type="radio" name="q45" value="b" /> Bad analysis results</label>
+      <label><input type="radio" name="q45" value="c" /> Larger datasets</label>
+      <label><input type="radio" name="q45" value="d" /> Faster models</label>
+    </div>
+    <button class="check-answer">Check answer</button>
+    <p class="explanation">Garbage in → garbage out.</p>
+  </article>
+</section>
+        <div class="submit-row">
+          <button id="submit-quiz">Submit quiz</button>
+          <a href="chapters.html" class="chapter-button" style="padding: 0.8rem 1.4rem;">Back to chapters</a>
+        </div>
+        <div id="grade-output"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

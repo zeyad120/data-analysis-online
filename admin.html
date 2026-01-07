@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="admin">
+  <main>
+    <div class="container">
+      <header class="hero">
+        <h1>Admin Login</h1>
+      </header>
+      <form id="admin-login-form">
+        <input type="text" id="admin-username" placeholder="Username" required />
+        <input type="password" id="admin-password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p id="admin-login-error" class="error-text"></p>
+      </form>
+      <section id="admin-entries" style="display:none;">
+        <h2>Quiz Submissions</h2>
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Date</th></tr>
+          </thead>
+          <tbody id="admin-submissions"></tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

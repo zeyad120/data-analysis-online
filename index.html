@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis Intro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p>Welcome to the fundamentals of data analysis.</p>
+          <h1>Enter your name to unlock the journey.</h1>
+          <p>
+            Complete short quizzes organized into three chapters. Each
+            question gives instant feedback and a final grade summary.
+          </p>
+        </header>
+        <div class="search-field">
+          <input
+            type="text"
+            id="name-input"
+            placeholder="Type your name"
+            maxlength="40"
+          />
+          <button id="start-btn" disabled>Start Exploring</button>
+<button id="admin-link-btn" onclick="window.location.href='admin.html'" style="margin-top:1rem;">Admin</button>
+        </div>
+        <p class="error-text" id="name-error"></p>
+        <div class="card-image" id="hero-card" title="Choose a chapter">
+          <img
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+            alt="Modern data workspace"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
