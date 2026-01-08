@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis – Chapter Four</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p class="name-banner" id="name-banner"></p>
+          <h1>Chapter Four: Statistical Analysis</h1>
+        </header>
+        <section class="quiz-questions">
+          <article class="question" data-answer="c">
+            <h2>1. What is the main goal of statistical analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="a" /> Collecting raw data</label>
+              <label><input type="radio" name="q1" value="b" /> Storing data efficiently</label>
+              <label><input type="radio" name="q1" value="c" /> Interpreting data to support decisions</label>
+              <label><input type="radio" name="q1" value="d" /> Designing databases</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Statistical analysis focuses on understanding and interpreting data to aid decision-making.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>2. Which type of statistics summarizes data without making predictions?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="a" /> Inferential</label>
+              <label><input type="radio" name="q2" value="b" /> Predictive</label>
+              <label><input type="radio" name="q2" value="c" /> Descriptive</label>
+              <label><input type="radio" name="q2" value="d" /> Prescriptive</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Descriptive statistics describe and summarize datasets.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>3. Which measure describes the center of a dataset?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="a" /> Variance</label>
+              <label><input type="radio" name="q3" value="b" /> Mean</label>
+              <label><input type="radio" name="q3" value="c" /> Range</label>
+              <label><input type="radio" name="q3" value="d" /> Standard deviation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The mean is a measure of central tendency.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>4. Which measure is least affected by extreme values?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q4" value="a" /> Mean</label>
+              <label><input type="radio" name="q4" value="b" /> Mode</label>
+              <label><input type="radio" name="q4" value="c" /> Median</label>
+              <label><input type="radio" name="q4" value="d" /> Range</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The median is resistant to outliers.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>5. Which statistic measures variability in data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q5" value="a" /> Mean</label>
+              <label><input type="radio" name="q5" value="b" /> Median</label>
+              <label><input type="radio" name="q5" value="c" /> Standard deviation</label>
+              <label><input type="radio" name="q5" value="d" /> Mode</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Standard deviation measures how spread out data values are.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>6. Which type of statistics allows conclusions about a population using a sample?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q6" value="a" /> Descriptive</label>
+              <label><input type="radio" name="q6" value="b" /> Inferential</label>
+              <label><input type="radio" name="q6" value="c" /> Exploratory</label>
+              <label><input type="radio" name="q6" value="d" /> Visual</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Inferential statistics generalize sample results to populations.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>7. What is a population in statistics?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q7" value="a" /> A dataset after cleaning</label>
+              <label><input type="radio" name="q7" value="b" /> Entire group of interest</label>
+              <label><input type="radio" name="q7" value="c" /> A small subset of data</label>
+              <label><input type="radio" name="q7" value="d" /> A random variable</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Population refers to the whole group being studied.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>8. What is a sample?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q8" value="a" /> Entire population</label>
+              <label><input type="radio" name="q8" value="b" /> Random error</label>
+              <label><input type="radio" name="q8" value="c" /> Subset of population</label>
+              <label><input type="radio" name="q8" value="d" /> Statistical model</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A sample is part of the population used for analysis.</p>
+          </article>
+          <article class="question" data-answer="d">
+            <h2>9. Which level of measurement is gender?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q9" value="a" /> Ordinal</label>
+              <label><input type="radio" name="q9" value="b" /> Interval</label>
+              <label><input type="radio" name="q9" value="c" /> Ratio</label>
+              <label><input type="radio" name="q9" value="d" /> Nominal</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Gender is categorical with no order.</p>
+          </article>
+          <article class="question" data-answer="d">
+            <h2>10. Which level of measurement has a true zero?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q10" value="a" /> Nominal</label>
+              <label><input type="radio" name="q10" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q10" value="c" /> Interval</label>
+              <label><input type="radio" name="q10" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ratio data has a meaningful zero.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>11. Temperature measured in Celsius is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q11" value="a" /> Nominal</label>
+              <label><input type="radio" name="q11" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q11" value="c" /> Interval</label>
+              <label><input type="radio" name="q11" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Zero in Celsius does not mean absence of temperature.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>12. Which measure shows the difference between maximum and minimum values?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q12" value="a" /> Variance</label>
+              <label><input type="radio" name="q12" value="b" /> Range</label>
+              <label><input type="radio" name="q12" value="c" /> Mean</label>
+              <label><input type="radio" name="q12" value="d" /> Median</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Range = Max − Min.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>13. Variance is best described as:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q13" value="a" /> Square root of dispersion</label>
+              <label><input type="radio" name="q13" value="b" /> Average of squared deviations</label>
+              <label><input type="radio" name="q13" value="c" /> Middle value</label>
+              <label><input type="radio" name="q13" value="d" /> Maximum value</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Variance is the average squared distance from the mean.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>14. Standard deviation is:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q14" value="a" /> Square of variance</label>
+              <label><input type="radio" name="q14" value="b" /> Cube of variance</label>
+              <label><input type="radio" name="q14" value="c" /> Square root of variance</label>
+              <label><input type="radio" name="q14" value="d" /> Mean of variance</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SD is the square root of variance.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>15. What does a small standard deviation indicate?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q15" value="a" /> Data is highly spread</label>
+              <label><input type="radio" name="q15" value="b" /> Data is skewed</label>
+              <label><input type="radio" name="q15" value="c" /> Data is clustered near the mean</label>
+              <label><input type="radio" name="q15" value="d" /> Presence of outliers</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Small SD means values are close to the mean.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>16. Which statistic is best for skewed data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q16" value="a" /> Mean</label>
+              <label><input type="radio" name="q16" value="b" /> Median</label>
+              <label><input type="radio" name="q16" value="c" /> Variance</label>
+              <label><input type="radio" name="q16" value="d" /> Range</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Median is robust in skewed distributions.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>17. What is inferential statistics mainly based on?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q17" value="a" /> Entire population</label>
+              <label><input type="radio" name="q17" value="b" /> Visualization</label>
+              <label><input type="radio" name="q17" value="c" /> Samples</label>
+              <label><input type="radio" name="q17" value="d" /> Databases</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Inferential statistics use samples to infer about populations.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>18. What is a hypothesis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q18" value="a" /> A proven fact</label>
+              <label><input type="radio" name="q18" value="b" /> A random guess</label>
+              <label><input type="radio" name="q18" value="c" /> A testable assumption</label>
+              <label><input type="radio" name="q18" value="d" /> A statistical error</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Hypotheses are assumptions tested statistically.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>19. What does the null hypothesis (H₀) represent?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q19" value="a" /> Desired result</label>
+              <label><input type="radio" name="q19" value="b" /> No effect or no difference</label>
+              <label><input type="radio" name="q19" value="c" /> Researcher's belief</label>
+              <label><input type="radio" name="q19" value="d" /> Final conclusion</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">H₀ assumes no effect or difference.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>20. Which value is commonly used as a significance level (α)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q20" value="a" /> 0.5</label>
+              <label><input type="radio" name="q20" value="b" /> 0.1</label>
+              <label><input type="radio" name="q20" value="c" /> 0.05</label>
+              <label><input type="radio" name="q20" value="d" /> 0.01 only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">0.05 is the standard significance level.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>21. Rejecting the null hypothesis means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q21" value="a" /> H₀ is true</label>
+              <label><input type="radio" name="q21" value="b" /> No statistical evidence</label>
+              <label><input type="radio" name="q21" value="c" /> Evidence supports H₁</label>
+              <label><input type="radio" name="q21" value="d" /> Sample is incorrect</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Rejecting H₀ means evidence supports the alternative hypothesis.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>22. What does a confidence interval represent?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q22" value="a" /> Exact population value</label>
+              <label><input type="radio" name="q22" value="b" /> Range likely containing population parameter</label>
+              <label><input type="radio" name="q22" value="c" /> Sample mean only</label>
+              <label><input type="radio" name="q22" value="d" /> Probability of error</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">CI gives a plausible range for population values.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>23. A 95% confidence interval means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q23" value="a" /> 95% of data lies inside</label>
+              <label><input type="radio" name="q23" value="b" /> Population value is guaranteed</label>
+              <label><input type="radio" name="q23" value="c" /> 95% confidence that interval contains true value</label>
+              <label><input type="radio" name="q23" value="d" /> Sample is 95% correct</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">CI reflects confidence, not certainty.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>24. Which analysis studies relationship between variables?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q24" value="a" /> Classification</label>
+              <label><input type="radio" name="q24" value="b" /> Correlation</label>
+              <label><input type="radio" name="q24" value="c" /> Normalization</label>
+              <label><input type="radio" name="q24" value="d" /> Sampling</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation measures strength and direction of relationships.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>25. Correlation coefficient values range between:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q25" value="a" /> 0 and 1</label>
+              <label><input type="radio" name="q25" value="b" /> -1 and 0</label>
+              <label><input type="radio" name="q25" value="c" /> -1 and +1</label>
+              <label><input type="radio" name="q25" value="d" /> 0 and +∞</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation ranges from -1 to +1.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>26. Correlation of -1 indicates:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q26" value="a" /> Weak positive relationship</label>
+              <label><input type="radio" name="q26" value="b" /> Strong positive relationship</label>
+              <label><input type="radio" name="q26" value="c" /> Strong negative relationship</label>
+              <label><input type="radio" name="q26" value="d" /> No relationship</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">-1 is perfect negative correlation.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>27. Correlation does NOT imply:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q27" value="a" /> Association</label>
+              <label><input type="radio" name="q27" value="b" /> Relationship</label>
+              <label><input type="radio" name="q27" value="c" /> Causation</label>
+              <label><input type="radio" name="q27" value="d" /> Trend</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation alone cannot prove cause-effect.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>28. Regression analysis is mainly used for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q28" value="a" /> Categorization</label>
+              <label><input type="radio" name="q28" value="b" /> Prediction</label>
+              <label><input type="radio" name="q28" value="c" /> Cleaning data</label>
+              <label><input type="radio" name="q28" value="d" /> Visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Regression predicts dependent variables.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>29. In regression, the variable being predicted is:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q29" value="a" /> Independent</label>
+              <label><input type="radio" name="q29" value="b" /> Control</label>
+              <label><input type="radio" name="q29" value="c" /> Dependent</label>
+              <label><input type="radio" name="q29" value="d" /> Random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Dependent variable is the outcome.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>30. Which regression uses one independent variable?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q30" value="a" /> Logistic</label>
+              <label><input type="radio" name="q30" value="b" /> Multiple</label>
+              <label><input type="radio" name="q30" value="c" /> Simple linear</label>
+              <label><input type="radio" name="q30" value="d" /> Polynomial</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Simple linear regression uses one predictor.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>31. What does ANOVA test?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q31" value="a" /> Correlation</label>
+              <label><input type="radio" name="q31" value="b" /> Variance equality</label>
+              <label><input type="radio" name="q31" value="c" /> Difference between means of multiple groups</label>
+              <label><input type="radio" name="q31" value="d" /> Data normality</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">ANOVA compares means of 3 or more groups.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>32. ANOVA is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q32" value="a" /> Descriptive statistics</label>
+              <label><input type="radio" name="q32" value="b" /> Inferential statistics</label>
+              <label><input type="radio" name="q32" value="c" /> Exploratory statistics</label>
+              <label><input type="radio" name="q32" value="d" /> Visual statistics</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">ANOVA draws conclusions about populations.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>33. Which chart best shows data distribution?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q33" value="a" /> Pie chart</label>
+              <label><input type="radio" name="q33" value="b" /> Histogram</label>
+              <label><input type="radio" name="q33" value="c" /> Scatter plot</label>
+              <label><input type="radio" name="q33" value="d" /> Line graph</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Histograms show frequency distribution.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>34. Which plot best detects outliers?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q34" value="a" /> Bar chart</label>
+              <label><input type="radio" name="q34" value="b" /> Boxplot</label>
+              <label><input type="radio" name="q34" value="c" /> Line plot</label>
+              <label><input type="radio" name="q34" value="d" /> Pie chart</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Boxplots highlight outliers.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>35. Scatter plots are mainly used to show:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q35" value="a" /> Categories</label>
+              <label><input type="radio" name="q35" value="b" /> Trends over time</label>
+              <label><input type="radio" name="q35" value="c" /> Relationships between variables</label>
+              <label><input type="radio" name="q35" value="d" /> Frequency</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Scatter plots show relationships.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>36. Which mistake is common in statistical analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q36" value="a" /> Using samples</label>
+              <label><input type="radio" name="q36" value="b" /> Interpreting correlation as causation</label>
+              <label><input type="radio" name="q36" value="c" /> Calculating mean</label>
+              <label><input type="radio" name="q36" value="d" /> Drawing charts</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation ≠ causation is a major pitfall.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>37. Which factor most affects inferential accuracy?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q37" value="a" /> Chart color</label>
+              <label><input type="radio" name="q37" value="b" /> Sample size</label>
+              <label><input type="radio" name="q37" value="c" /> File format</label>
+              <label><input type="radio" name="q37" value="d" /> Data type</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Larger samples usually give more reliable results.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>38. Which statistic compares variability across datasets?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q38" value="a" /> Mean</label>
+              <label><input type="radio" name="q38" value="b" /> Median</label>
+              <label><input type="radio" name="q38" value="c" /> Coefficient of Variation</label>
+              <label><input type="radio" name="q38" value="d" /> Mode</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">CV compares relative variability.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>39. Which distribution is symmetric?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q39" value="a" /> Right-skewed</label>
+              <label><input type="radio" name="q39" value="b" /> Left-skewed</label>
+              <label><input type="radio" name="q39" value="c" /> Normal</label>
+              <label><input type="radio" name="q39" value="d" /> Uniform only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Normal distribution is symmetric.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>40. What does skewness describe?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q40" value="a" /> Center</label>
+              <label><input type="radio" name="q40" value="b" /> Spread</label>
+              <label><input type="radio" name="q40" value="c" /> Asymmetry</label>
+              <label><input type="radio" name="q40" value="d" /> Frequency</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Skewness measures asymmetry.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>41. Which step comes first in hypothesis testing?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q41" value="a" /> Decision</label>
+              <label><input type="radio" name="q41" value="b" /> Calculate statistic</label>
+              <label><input type="radio" name="q41" value="c" /> Define hypotheses</label>
+              <label><input type="radio" name="q41" value="d" /> Collect data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Hypotheses must be defined first.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>42. Which value indicates strong evidence against H₀?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q42" value="a" /> Large p-value</label>
+              <label><input type="radio" name="q42" value="b" /> p-value > 0.05</label>
+              <label><input type="radio" name="q42" value="c" /> Small p-value</label>
+              <label><input type="radio" name="q42" value="d" /> p = 1</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Small p-values suggest rejecting H₀.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>43. Statistical analysis is MOST important for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q43" value="a" /> Data storage</label>
+              <label><input type="radio" name="q43" value="b" /> File compression</label>
+              <label><input type="radio" name="q43" value="c" /> Evidence-based decisions</label>
+              <label><input type="radio" name="q43" value="d" /> UI design</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Statistics supports evidence-based decisions.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>44. Which field heavily relies on statistical analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q44" value="a" /> Graphic design</label>
+              <label><input type="radio" name="q44" value="b" /> Game art</label>
+              <label><input type="radio" name="q44" value="c" /> Healthcare</label>
+              <label><input type="radio" name="q44" value="d" /> Animation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Healthcare uses statistics extensively.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>45. Which statement is TRUE?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q45" value="a" /> Mean is always best</label>
+              <label><input type="radio" name="q45" value="b" /> Bigger data removes bias</label>
+              <label><input type="radio" name="q45" value="c" /> Statistics helps reduce uncertainty</label>
+              <label><input type="radio" name="q45" value="d" /> Statistics guarantees accuracy</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Statistics reduces uncertainty but never guarantees certainty.</p>
+          </article>
+        </section>
+        <div class="submit-row">
+          <button id="submit-quiz">Submit quiz</button>
+          <a href="chapters.html" class="chapter-button" style="padding: 0.8rem 1.4rem;">Back to chapters</a>
+        </div>
+        <div id="grade-output"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
