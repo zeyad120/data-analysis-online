@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis – Chapter Five</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p class="name-banner" id="name-banner"></p>
+          <h1>Chapter Five: Predictive Data Analysis</h1>
+        </header>
+        <section class="quiz-questions">
+          <article class="question" data-answer="c">
+            <h2>1. What is predictive data analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="a" /> Describing past data</label>
+              <label><input type="radio" name="q1" value="b" /> Visualizing current data</label>
+              <label><input type="radio" name="q1" value="c" /> Using data to predict future outcomes</label>
+              <label><input type="radio" name="q1" value="d" /> Cleaning datasets</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Predictive analysis focuses on forecasting future events using data.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>2. Predictive analysis mainly uses:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="a" /> Random guesses</label>
+              <label><input type="radio" name="q2" value="b" /> Historical data</label>
+              <label><input type="radio" name="q2" value="c" /> Manual decisions</label>
+              <label><input type="radio" name="q2" value="d" /> Visualization only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It relies on past and current data to predict the future.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>3. Predictive analysis is most similar to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="a" /> Reporting</label>
+              <label><input type="radio" name="q3" value="b" /> Weather forecasting</label>
+              <label><input type="radio" name="q3" value="c" /> Data storage</label>
+              <label><input type="radio" name="q3" value="d" /> Data cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Like weather forecasting, predictions are probabilistic.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>4. Predictions are:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q4" value="a" /> Always accurate</label>
+              <label><input type="radio" name="q4" value="b" /> Guaranteed</label>
+              <label><input type="radio" name="q4" value="c" /> Probabilistic</label>
+              <label><input type="radio" name="q4" value="d" /> Random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Predictive results are probabilities, not certainties.</p>
+          </article>
+          <article class="question" data-answer="d">
+            <h2>5. Which is NOT a goal of predictive analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q5" value="a" /> Forecasting</label>
+              <label><input type="radio" name="q5" value="b" /> Classification</label>
+              <label><input type="radio" name="q5" value="c" /> Risk assessment</label>
+              <label><input type="radio" name="q5" value="d" /> Data visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Visualization is supportive, not a main goal.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>6. Predicting future sales is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q6" value="a" /> Classification</label>
+              <label><input type="radio" name="q6" value="b" /> Forecasting</label>
+              <label><input type="radio" name="q6" value="c" /> Clustering</label>
+              <label><input type="radio" name="q6" value="d" /> Encoding</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Forecasting predicts numerical future values.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>7. Spam vs Not Spam is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q7" value="a" /> Forecasting</label>
+              <label><input type="radio" name="q7" value="b" /> Regression</label>
+              <label><input type="radio" name="q7" value="c" /> Classification</label>
+              <label><input type="radio" name="q7" value="d" /> Clustering</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Classification predicts categories.</p>
+          </article>
+          <article class="question" data-answer="a">
+            <h2>8. Predicting loan default probability is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q8" value="a" /> Risk assessment</label>
+              <label><input type="radio" name="q8" value="b" /> Visualization</label>
+              <label><input type="radio" name="q8" value="c" /> Cleaning</label>
+              <label><input type="radio" name="q8" value="d" /> Encoding</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It estimates risk of an event.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>9. What is the first step in predictive analysis workflow?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q9" value="a" /> Model training</label>
+              <label><input type="radio" name="q9" value="b" /> Data preparation</label>
+              <label><input type="radio" name="q9" value="c" /> Define objective</label>
+              <label><input type="radio" name="q9" value="d" /> Evaluation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The goal must be clearly defined first.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>10. Poor data preparation usually leads to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q10" value="a" /> Faster models</label>
+              <label><input type="radio" name="q10" value="b" /> Accurate predictions</label>
+              <label><input type="radio" name="q10" value="c" /> Poor predictions</label>
+              <label><input type="radio" name="q10" value="d" /> Better performance</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Model quality depends on data quality.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>11. Which step involves understanding patterns and relationships?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q11" value="a" /> Deployment</label>
+              <label><input type="radio" name="q11" value="b" /> EDA</label>
+              <label><input type="radio" name="q11" value="c" /> Evaluation</label>
+              <label><input type="radio" name="q11" value="d" /> Reporting</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">EDA explores data before modeling.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>12. Which step chooses the best algorithm?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q12" value="a" /> Training</label>
+              <label><input type="radio" name="q12" value="b" /> Model selection</label>
+              <label><input type="radio" name="q12" value="c" /> Deployment</label>
+              <label><input type="radio" name="q12" value="d" /> Monitoring</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Model selection determines which method to use.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>13. Splitting data into training and test sets helps to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q13" value="a" /> Increase accuracy artificially</label>
+              <label><input type="radio" name="q13" value="b" /> Avoid overfitting</label>
+              <label><input type="radio" name="q13" value="c" /> Clean data</label>
+              <label><input type="radio" name="q13" value="d" /> Visualize results</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It checks generalization ability.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>14. Which step measures how good a model is?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q14" value="a" /> EDA</label>
+              <label><input type="radio" name="q14" value="b" /> Deployment</label>
+              <label><input type="radio" name="q14" value="c" /> Evaluation</label>
+              <label><input type="radio" name="q14" value="d" /> Encoding</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Evaluation uses performance metrics.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>15. Using a model in real-world applications is called:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q15" value="a" /> Validation</label>
+              <label><input type="radio" name="q15" value="b" /> Training</label>
+              <label><input type="radio" name="q15" value="c" /> Deployment</label>
+              <label><input type="radio" name="q15" value="d" /> Cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Deployment applies the model practically.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>16. Which is a statistical method for prediction?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q16" value="a" /> Decision Tree</label>
+              <label><input type="radio" name="q16" value="b" /> Neural Network</label>
+              <label><input type="radio" name="q16" value="c" /> Regression</label>
+              <label><input type="radio" name="q16" value="d" /> Random Forest</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Regression is a statistical technique.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>17. Linear regression is mainly used to predict:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q17" value="a" /> Categories</label>
+              <label><input type="radio" name="q17" value="b" /> Images</label>
+              <label><input type="radio" name="q17" value="c" /> Numerical values</label>
+              <label><input type="radio" name="q17" value="d" /> Text</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Linear regression predicts continuous values.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>18. Logistic regression predicts:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q18" value="a" /> Exact numbers</label>
+              <label><input type="radio" name="q18" value="b" /> Continuous values</label>
+              <label><input type="radio" name="q18" value="c" /> Categories</label>
+              <label><input type="radio" name="q18" value="d" /> Clusters</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Logistic regression is for classification.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>19. Time series analysis is used when data:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q19" value="a" /> Is categorical</label>
+              <label><input type="radio" name="q19" value="b" /> Has no order</label>
+              <label><input type="radio" name="q19" value="c" /> Changes over time</label>
+              <label><input type="radio" name="q19" value="d" /> Is unstructured</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Time series data includes a time dimension.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>20. Which is an example of time-series prediction?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q20" value="a" /> Predicting gender</label>
+              <label><input type="radio" name="q20" value="b" /> Predicting exam rank</label>
+              <label><input type="radio" name="q20" value="c" /> Forecasting monthly sales</label>
+              <label><input type="radio" name="q20" value="d" /> Encoding categories</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Sales over time form a time series.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>21. Decision Trees work based on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q21" value="a" /> Mathematical equations</label>
+              <label><input type="radio" name="q21" value="b" /> If–Else rules</label>
+              <label><input type="radio" name="q21" value="c" /> Probabilities only</label>
+              <label><input type="radio" name="q21" value="d" /> Random guesses</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Trees split data using decision rules.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>22. Random Forest improves accuracy by:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q22" value="a" /> Using one tree</label>
+              <label><input type="radio" name="q22" value="b" /> Ignoring data</label>
+              <label><input type="radio" name="q22" value="c" /> Combining multiple trees</label>
+              <label><input type="radio" name="q22" value="d" /> Removing features</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It aggregates many decision trees.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>23. Which model is best for complex patterns like images?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q23" value="a" /> Linear regression</label>
+              <label><input type="radio" name="q23" value="b" /> Neural networks</label>
+              <label><input type="radio" name="q23" value="c" /> Time series</label>
+              <label><input type="radio" name="q23" value="d" /> Correlation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Neural networks handle complex data.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>24. Ensemble methods mean:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q24" value="a" /> One model only</label>
+              <label><input type="radio" name="q24" value="b" /> No models</label>
+              <label><input type="radio" name="q24" value="c" /> Combining multiple models</label>
+              <label><input type="radio" name="q24" value="d" /> Data cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ensemble combines models for better performance.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>25. Which is an ensemble technique?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q25" value="a" /> Regression</label>
+              <label><input type="radio" name="q25" value="b" /> Decision Tree</label>
+              <label><input type="radio" name="q25" value="c" /> Boosting</label>
+              <label><input type="radio" name="q25" value="d" /> Correlation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Boosting is an ensemble method.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>26. Bayesian methods are based on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q26" value="a" /> Rules only</label>
+              <label><input type="radio" name="q26" value="b" /> Probabilities</label>
+              <label><input type="radio" name="q26" value="c" /> Images</label>
+              <label><input type="radio" name="q26" value="d" /> Sorting</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Bayesian models use probability theory.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>27. Markov Chains predict:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q27" value="a" /> Past values</label>
+              <label><input type="radio" name="q27" value="b" /> Random values</label>
+              <label><input type="radio" name="q27" value="c" /> Next state based on current state</label>
+              <label><input type="radio" name="q27" value="d" /> Maximum value</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">They depend on the current state.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>28. Predictive analysis is widely used in business to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q28" value="a" /> Draw charts</label>
+              <label><input type="radio" name="q28" value="b" /> Predict customer behavior</label>
+              <label><input type="radio" name="q28" value="c" /> Store data</label>
+              <label><input type="radio" name="q28" value="d" /> Clean files</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Businesses use predictions for strategy.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>29. Fraud detection is common in:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q29" value="a" /> Education</label>
+              <label><input type="radio" name="q29" value="b" /> Sports</label>
+              <label><input type="radio" name="q29" value="c" /> Finance</label>
+              <label><input type="radio" name="q29" value="d" /> Agriculture</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Financial systems detect fraud using prediction.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>30. Predicting disease risk is an application in:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q30" value="a" /> Marketing</label>
+              <label><input type="radio" name="q30" value="b" /> Healthcare</label>
+              <label><input type="radio" name="q30" value="c" /> Gaming</label>
+              <label><input type="radio" name="q30" value="d" /> Design</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Healthcare uses predictive models extensively.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>31. Which metric is used for classification models?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q31" value="a" /> RMSE</label>
+              <label><input type="radio" name="q31" value="b" /> MAE</label>
+              <label><input type="radio" name="q31" value="c" /> Accuracy</label>
+              <label><input type="radio" name="q31" value="d" /> R²</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Accuracy evaluates classification.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>32. Precision measures:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q32" value="a" /> Correct predictions overall</label>
+              <label><input type="radio" name="q32" value="b" /> Correct positive predictions</label>
+              <label><input type="radio" name="q32" value="c" /> Missed positives</label>
+              <label><input type="radio" name="q32" value="d" /> Error size</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Precision focuses on predicted positives.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>33. Recall measures:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q33" value="a" /> Correct negatives</label>
+              <label><input type="radio" name="q33" value="b" /> Total predictions</label>
+              <label><input type="radio" name="q33" value="c" /> Correctly identified positives</label>
+              <label><input type="radio" name="q33" value="d" /> Error rate</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Recall shows how many positives were found.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>34. Which metric is used for regression?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q34" value="a" /> Accuracy</label>
+              <label><input type="radio" name="q34" value="b" /> Recall</label>
+              <label><input type="radio" name="q34" value="c" /> RMSE</label>
+              <label><input type="radio" name="q34" value="d" /> F1-score</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">RMSE measures regression error.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>35. Lower RMSE means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q35" value="a" /> Worse model</label>
+              <label><input type="radio" name="q35" value="b" /> Better model</label>
+              <label><input type="radio" name="q35" value="c" /> Larger errors</label>
+              <label><input type="radio" name="q35" value="d" /> No relationship</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Lower error indicates better predictions.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>36. Which value indicates how well regression fits data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q36" value="a" /> Accuracy</label>
+              <label><input type="radio" name="q36" value="b" /> Precision</label>
+              <label><input type="radio" name="q36" value="c" /> R²</label>
+              <label><input type="radio" name="q36" value="d" /> Recall</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">R² shows goodness of fit.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>37. Which language is widely used for predictive analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q37" value="a" /> HTML</label>
+              <label><input type="radio" name="q37" value="b" /> CSS</label>
+              <label><input type="radio" name="q37" value="c" /> Python</label>
+              <label><input type="radio" name="q37" value="d" /> SQL only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Python has powerful ML libraries.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>38. Which Python library is commonly used for ML?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q38" value="a" /> NumPy</label>
+              <label><input type="radio" name="q38" value="b" /> Scikit-learn</label>
+              <label><input type="radio" name="q38" value="c" /> Matplotlib only</label>
+              <label><input type="radio" name="q38" value="d" /> Excel</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Scikit-learn supports predictive models.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>39. Overfitting means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q39" value="a" /> Model performs well on new data</label>
+              <label><input type="radio" name="q39" value="b" /> Model memorizes training data</label>
+              <label><input type="radio" name="q39" value="c" /> Model ignores training data</label>
+              <label><input type="radio" name="q39" value="d" /> Model is random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Overfitting harms generalization.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>40. Which practice helps reduce overfitting?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q40" value="a" /> Ignoring test data</label>
+              <label><input type="radio" name="q40" value="b" /> Using validation</label>
+              <label><input type="radio" name="q40" value="c" /> Using only training data</label>
+              <label><input type="radio" name="q40" value="d" /> Removing features randomly</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Validation checks generalization.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>41. Interpretability means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q41" value="a" /> Model speed</label>
+              <label><input type="radio" name="q41" value="b" /> Model accuracy</label>
+              <label><input type="radio" name="q41" value="c" /> Understanding model decisions</label>
+              <label><input type="radio" name="q41" value="d" /> Data size</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Interpretability explains predictions.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>42. Ethical concerns in predictive analysis include:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q42" value="a" /> File size</label>
+              <label><input type="radio" name="q42" value="b" /> Bias</label>
+              <label><input type="radio" name="q42" value="c" /> Chart color</label>
+              <label><input type="radio" name="q42" value="d" /> Storage</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Bias can lead to unfair predictions.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>43. Predictive models should be:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q43" value="a" /> Built once and forgotten</label>
+              <label><input type="radio" name="q43" value="b" /> Continuously monitored</label>
+              <label><input type="radio" name="q43" value="c" /> Never updated</label>
+              <label><input type="radio" name="q43" value="d" /> Used without testing</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Models need monitoring over time.</p>
+          </article>
+          <article class="question" data-answer="b">
+            <h2>44. Predictive analysis combines:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q44" value="a" /> Visualization + storage</label>
+              <label><input type="radio" name="q44" value="b" /> Statistics + machine learning</label>
+              <label><input type="radio" name="q44" value="c" /> Databases + UI</label>
+              <label><input type="radio" name="q44" value="d" /> Cleaning + reporting</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It uses both statistics and ML.</p>
+          </article>
+          <article class="question" data-answer="c">
+            <h2>45. Which statement is TRUE?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q45" value="a" /> Predictions are always correct</label>
+              <label><input type="radio" name="q45" value="b" /> Predictive analysis removes uncertainty</label>
+              <label><input type="radio" name="q45" value="c" /> Predictive models support decisions</label>
+              <label><input type="radio" name="q45" value="d" /> Predictive analysis replaces humans</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Predictive analysis supports, not replaces, decisions.</p>
+          </article>
+        </section>
+        <div class="submit-row">
+          <button id="submit-quiz">Submit quiz</button>
+          <a href="chapters.html" class="chapter-button" style="padding: 0.8rem 1.4rem;">Back to chapters</a>
+        </div>
+        <div id="grade-output"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
