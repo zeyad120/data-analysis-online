@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis – Final Revision</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p class="name-banner" id="name-banner"></p>
+          <h1>Chapter Final: Last Revision</h1>
+        </header>
+        <section class="quiz-questions">
+          <!-- Questions 1–40 are correct in your file; I'm including them for completeness -->
+          <article class="question" data-answer="c">
+            <h2>1. What is the primary goal of data analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="a" /> Collecting large datasets</label>
+              <label><input type="radio" name="q1" value="b" /> Storing information efficiently</label>
+              <label><input type="radio" name="q1" value="c" /> Transforming raw data into insights</label>
+              <label><input type="radio" name="q1" value="d" /> Removing all errors from data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The main goal is to extract meaningful insights from data, not just collect or clean it.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>2. Which step comes immediately before modeling in the data analysis process?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="a" /> Reporting</label>
+              <label><input type="radio" name="q2" value="b" /> Data collection</label>
+              <label><input type="radio" name="q2" value="c" /> Data cleaning</label>
+              <label><input type="radio" name="q2" value="d" /> Exploratory Data Analysis (EDA)</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">EDA helps understand data patterns before building models.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>3. Customer satisfaction levels (Poor, Good, Excellent) represent which data type?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="a" /> Nominal</label>
+              <label><input type="radio" name="q3" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q3" value="c" /> Interval</label>
+              <label><input type="radio" name="q3" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ordinal data has a meaningful order but no fixed numerical difference between categories.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>4. Which scale of measurement has a true zero?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q4" value="a" /> Nominal</label>
+              <label><input type="radio" name="q4" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q4" value="c" /> Interval</label>
+              <label><input type="radio" name="q4" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ratio scales have a true zero point, allowing meaningful ratios (e.g., twice as much).</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>5. Predicting future loan default risk is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q5" value="a" /> Descriptive analysis</label>
+              <label><input type="radio" name="q5" value="b" /> Diagnostic analysis</label>
+              <label><input type="radio" name="q5" value="c" /> Predictive analysis</label>
+              <label><input type="radio" name="q5" value="d" /> Prescriptive analysis</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Predictive analysis uses historical data to forecast future outcomes.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>6. Which challenge is mainly ethical rather than technical?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q6" value="a" /> Missing values</label>
+              <label><input type="radio" name="q6" value="b" /> Duplicate data</label>
+              <label><input type="radio" name="q6" value="c" /> Privacy issues</label>
+              <label><input type="radio" name="q6" value="d" /> Outliers</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Privacy involves legal and ethical responsibilities, not just technical handling.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>7. Temperature measured in Celsius uses which scale?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q7" value="a" /> Nominal</label>
+              <label><input type="radio" name="q7" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q7" value="c" /> Interval</label>
+              <label><input type="radio" name="q7" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Celsius is interval; zero does not mean "no temperature."</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>8. Which statement best distinguishes data analysis from data collection?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q8" value="a" /> Data analysis focuses on gathering raw data</label>
+              <label><input type="radio" name="q8" value="b" /> Data analysis converts raw data into meaningful insights</label>
+              <label><input type="radio" name="q8" value="c" /> Data collection involves interpretation</label>
+              <label><input type="radio" name="q8" value="d" /> Data analysis only involves visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Analysis transforms raw data into insights; collection is just gathering.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>9. Which of the following best describes raw data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q9" value="a" /> Data after visualization</label>
+              <label><input type="radio" name="q9" value="b" /> Data after statistical modeling</label>
+              <label><input type="radio" name="q9" value="c" /> Unprocessed and unorganized data</label>
+              <label><input type="radio" name="q9" value="d" /> Interpreted and summarized data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Raw data is in its original, unprocessed form.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>10. Why is data analysis critical in decision-making?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q10" value="a" /> It guarantees correct decisions</label>
+              <label><input type="radio" name="q10" value="b" /> It removes uncertainty completely</label>
+              <label><input type="radio" name="q10" value="c" /> It reduces guesswork by providing evidence</label>
+              <label><input type="radio" name="q10" value="d" /> It replaces human judgment</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Analysis provides evidence-based support, not guarantees.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>11. Which data type allows mathematical operations like addition and multiplication?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q11" value="a" /> Nominal</label>
+              <label><input type="radio" name="q11" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q11" value="c" /> Qualitative</label>
+              <label><input type="radio" name="q11" value="d" /> Quantitative</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Quantitative data is numerical and supports arithmetic operations.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>12. Which role primarily focuses on building predictive models?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q12" value="a" /> Data Analyst</label>
+              <label><input type="radio" name="q12" value="b" /> Data Scientist</label>
+              <label><input type="radio" name="q12" value="c" /> Business Analyst</label>
+              <label><input type="radio" name="q12" value="d" /> Data Engineer</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Data scientists specialize in predictive modeling and machine learning.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>13. What is the main drawback of big data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q13" value="a" /> Too accurate</label>
+              <label><input type="radio" name="q13" value="b" /> Too small</label>
+              <label><input type="radio" name="q13" value="c" /> Difficult to store and analyze</label>
+              <label><input type="radio" name="q13" value="d" /> Easy to visualize</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Big data presents challenges in storage, processing, and analysis due to its volume.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>14. Which is NOT a challenge in data analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q14" value="a" /> Bias</label>
+              <label><input type="radio" name="q14" value="b" /> Missing values</label>
+              <label><input type="radio" name="q14" value="c" /> Visualization</label>
+              <label><input type="radio" name="q14" value="d" /> Privacy issues</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Visualization is a tool, not a fundamental challenge.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>15. Which output is produced at the reporting stage?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q15" value="a" /> Clean dataset</label>
+              <label><input type="radio" name="q15" value="b" /> Insights and recommendations</label>
+              <label><input type="radio" name="q15" value="c" /> Raw data</label>
+              <label><input type="radio" name="q15" value="d" /> Models only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Reporting communicates insights and actionable recommendations.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>16. Primary data is:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q16" value="a" /> Downloaded from databases</label>
+              <label><input type="radio" name="q16" value="b" /> Collected firsthand</label>
+              <label><input type="radio" name="q16" value="c" /> Already processed</label>
+              <label><input type="radio" name="q16" value="d" /> Aggregated data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Primary data is collected directly by the researcher for a specific purpose.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>17. Kaggle datasets are an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q17" value="a" /> Primary data</label>
+              <label><input type="radio" name="q17" value="b" /> Experimental data</label>
+              <label><input type="radio" name="q17" value="c" /> Secondary data</label>
+              <label><input type="radio" name="q17" value="d" /> Survey data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Kaggle datasets are pre-existing, making them secondary data.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>18. JSON files are classified as:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q18" value="a" /> Structured</label>
+              <label><input type="radio" name="q18" value="b" /> Semi-structured</label>
+              <label><input type="radio" name="q18" value="c" /> Unstructured</label>
+              <label><input type="radio" name="q18" value="d" /> Time-series</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">JSON has a flexible structure but is not strictly tabular like CSV.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>19. Which issue most affects data validity?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q19" value="a" /> Noise</label>
+              <label><input type="radio" name="q19" value="b" /> Duplicates</label>
+              <label><input type="radio" name="q19" value="c" /> Bias</label>
+              <label><input type="radio" name="q19" value="d" /> Normalization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Bias in collection can lead to invalid, non-representative data.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>20. SQL databases are best for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q20" value="a" /> Image storage</label>
+              <label><input type="radio" name="q20" value="b" /> Relational querying</label>
+              <label><input type="radio" name="q20" value="c" /> Text mining</label>
+              <label><input type="radio" name="q20" value="d" /> Visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is optimized for structured, relational data querying.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>21. Median is preferred for filling missing values when data is:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q21" value="a" /> Symmetric</label>
+              <label><input type="radio" name="q21" value="b" /> Skewed</label>
+              <label><input type="radio" name="q21" value="c" /> Binary</label>
+              <label><input type="radio" name="q21" value="d" /> Categorical</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Median is robust to outliers and skewness.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>22. Outliers should always be removed. (True/False)</h2>
+            <div class="choices">
+              <label><input type="radio" name="q22" value="a" /> True</label>
+              <label><input type="radio" name="q22" value="b" /> False</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Outliers may contain important information; they should be investigated, not automatically removed.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>23. Standardization results in:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q23" value="a" /> Values between 0 and 1</label>
+              <label><input type="radio" name="q23" value="b" /> Mean = 0 and SD = 1</label>
+              <label><input type="radio" name="q23" value="c" /> Removal of outliers</label>
+              <label><input type="radio" name="q23" value="d" /> Integer values</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Standardization (z-score) centers data around mean 0 with standard deviation 1.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>24. Why must categorical data be encoded?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q24" value="a" /> To reduce size</label>
+              <label><input type="radio" name="q24" value="b" /> To remove bias</label>
+              <label><input type="radio" name="q24" value="c" /> Because models require numeric input</label>
+              <label><input type="radio" name="q24" value="d" /> To visualize faster</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Most machine learning algorithms require numerical input.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>25. Feature engineering mainly aims to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q25" value="a" /> Clean data</label>
+              <label><input type="radio" name="q25" value="b" /> Improve model performance</label>
+              <label><input type="radio" name="q25" value="c" /> Reduce noise</label>
+              <label><input type="radio" name="q25" value="d" /> Store data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Creating better features helps models learn more effectively.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>26. Different date formats represent what data quality issue?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q26" value="a" /> Noise</label>
+              <label><input type="radio" name="q26" value="b" /> Outliers</label>
+              <label><input type="radio" name="q26" value="c" /> Inconsistent formatting</label>
+              <label><input type="radio" name="q26" value="d" /> Missing data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Inconsistent formats must be standardized for analysis.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>27. Noise refers to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q27" value="a" /> Missing data</label>
+              <label><input type="radio" name="q27" value="b" /> Duplicate rows</label>
+              <label><input type="radio" name="q27" value="c" /> Random irrelevant variation</label>
+              <label><input type="radio" name="q27" value="d" /> Extreme values</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Noise is random error that obscures true patterns.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>28. Best tool for querying large databases:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q28" value="a" /> Excel</label>
+              <label><input type="radio" name="q28" value="b" /> SQL</label>
+              <label><input type="radio" name="q28" value="c" /> Tableau</label>
+              <label><input type="radio" name="q28" value="d" /> Power BI</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is designed for efficient querying of relational databases.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>29. Data integration means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q29" value="a" /> Cleaning data</label>
+              <label><input type="radio" name="q29" value="b" /> Combining data sources</label>
+              <label><input type="radio" name="q29" value="c" /> Encoding categories</label>
+              <label><input type="radio" name="q29" value="d" /> Visualizing data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Integration merges data from multiple sources into a unified view.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>30. GDPR focuses on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q30" value="a" /> Data speed</label>
+              <label><input type="radio" name="q30" value="b" /> Data storage</label>
+              <label><input type="radio" name="q30" value="c" /> Data privacy</label>
+              <label><input type="radio" name="q30" value="d" /> Data visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">GDPR is a regulation protecting personal data privacy in the EU.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>31. Which step ensures ethical data handling?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q31" value="a" /> Visualization</label>
+              <label><input type="radio" name="q31" value="b" /> Cleaning</label>
+              <label><input type="radio" name="q31" value="c" /> Privacy compliance</label>
+              <label><input type="radio" name="q31" value="d" /> Encoding</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ethical handling includes respecting privacy laws and consent.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>32. Which is NOT a data collection method?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q32" value="a" /> Survey</label>
+              <label><input type="radio" name="q32" value="b" /> Interview</label>
+              <label><input type="radio" name="q32" value="c" /> Observation</label>
+              <label><input type="radio" name="q32" value="d" /> Normalization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Normalization is a preprocessing step, not a collection method.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>33. Customer reviews text is an example of what data type?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q33" value="a" /> Structured</label>
+              <label><input type="radio" name="q33" value="b" /> Semi-structured</label>
+              <label><input type="radio" name="q33" value="c" /> Unstructured</label>
+              <label><input type="radio" name="q33" value="d" /> Time-series</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Free text lacks a predefined structure.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>34. Which data is collected directly from the source?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q34" value="a" /> Secondary</label>
+              <label><input type="radio" name="q34" value="b" /> Historical</label>
+              <label><input type="radio" name="q34" value="c" /> Primary</label>
+              <label><input type="radio" name="q34" value="d" /> Synthetic</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Primary data is collected firsthand for the study.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>35. Which technique replaces missing values with the middle value?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q35" value="a" /> Mean imputation</label>
+              <label><input type="radio" name="q35" value="b" /> Median imputation</label>
+              <label><input type="radio" name="q35" value="c" /> Mode imputation</label>
+              <label><input type="radio" name="q35" value="d" /> Deletion</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Median imputation uses the middle value, which is robust to outliers.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>36. Which process converts text categories into numbers?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q36" value="a" /> Cleaning</label>
+              <label><input type="radio" name="q36" value="b" /> Encoding</label>
+              <label><input type="radio" name="q36" value="c" /> Sampling</label>
+              <label><input type="radio" name="q36" value="d" /> Visualization</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Encoding transforms categorical labels into numerical format.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>37. Which operation removes repeated records?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q37" value="a" /> Normalization</label>
+              <label><input type="radio" name="q37" value="b" /> Deduplication</label>
+              <label><input type="radio" name="q37" value="c" /> Encoding</label>
+              <label><input type="radio" name="q37" value="d" /> Transformation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Deduplication removes duplicate entries from a dataset.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>38. Which challenge relates to personal information protection?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q38" value="a" /> Noise</label>
+              <label><input type="radio" name="q38" value="b" /> Bias</label>
+              <label><input type="radio" name="q38" value="c" /> Privacy</label>
+              <label><input type="radio" name="q38" value="d" /> Redundancy</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Privacy concerns the protection of personally identifiable information.</p>
+          </article>
+
+          <!-- START OF CORRECTED QUESTIONS (41–131) -->
+          <!-- EDA Questions (41-55) -->
+          <article class="question" data-answer="c">
+            <h2>39. Main purpose of EDA is to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q39" value="a" /> Build models</label>
+              <label><input type="radio" name="q39" value="b" /> Confirm hypotheses</label>
+              <label><input type="radio" name="q39" value="c" /> Understand data</label>
+              <label><input type="radio" name="q39" value="d" /> Optimize algorithms</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">EDA is for exploring and understanding data structure and patterns.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>40. EDA should be performed:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q40" value="a" /> After modeling</label>
+              <label><input type="radio" name="q40" value="b" /> Before modeling</label>
+              <label><input type="radio" name="q40" value="c" /> After reporting</label>
+              <label><input type="radio" name="q40" value="d" /> During deployment</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">EDA guides modeling decisions by revealing data characteristics.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>41. Most outlier-resistant statistic:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q41" value="a" /> Mean</label>
+              <label><input type="radio" name="q41" value="b" /> Median</label>
+              <label><input type="radio" name="q41" value="c" /> Variance</label>
+              <label><input type="radio" name="q41" value="d" /> Range</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Median is not influenced by extreme values.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>42. In right-skewed data, how do the mean and median compare?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q42" value="a" /> Mean < Median</label>
+              <label><input type="radio" name="q42" value="b" /> Mean = Median</label>
+              <label><input type="radio" name="q42" value="c" /> Mean > Median</label>
+              <label><input type="radio" name="q42" value="d" /> No outliers</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">In right-skewed data, the mean is pulled higher than the median.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>43. Best plot for viewing the shape of a distribution:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q43" value="a" /> Scatter plot</label>
+              <label><input type="radio" name="q43" value="b" /> Histogram</label>
+              <label><input type="radio" name="q43" value="c" /> Line chart</label>
+              <label><input type="radio" name="q43" value="d" /> Heatmap</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Histograms display frequency distributions and shape.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>44. Boxplots are mainly used to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q44" value="a" /> Show correlation</label>
+              <label><input type="radio" name="q44" value="b" /> Detect outliers</label>
+              <label><input type="radio" name="q44" value="c" /> Encode data</label>
+              <label><input type="radio" name="q44" value="d" /> Normalize values</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Boxplots visually show quartiles and highlight outliers.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>45. Z-score outliers are typically beyond:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q45" value="a" /> ±1</label>
+              <label><input type="radio" name="q45" value="b" /> ±2</label>
+              <label><input type="radio" name="q45" value="c" /> ±3</label>
+              <label><input type="radio" name="q45" value="d" /> ±5</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A common rule is that data points beyond ±3 standard deviations are outliers.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>46. Correlation of -0.9 indicates:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q46" value="a" /> No relationship</label>
+              <label><input type="radio" name="q46" value="b" /> Weak positive</label>
+              <label><input type="radio" name="q46" value="c" /> Strong negative</label>
+              <label><input type="radio" name="q46" value="d" /> Random relation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Values close to -1 indicate a strong negative linear relationship.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>47. Heatmaps are best for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q47" value="a" /> Univariate analysis</label>
+              <label><input type="radio" name="q47" value="b" /> Correlation visualization</label>
+              <label><input type="radio" name="q47" value="c" /> Time trends</label>
+              <label><input type="radio" name="q47" value="d" /> Frequency counts</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Heatmaps effectively display correlation matrices using color intensity.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>48. Best plot for visualizing the relationship between two numerical variables:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q48" value="a" /> Bar chart</label>
+              <label><input type="radio" name="q48" value="b" /> Histogram</label>
+              <label><input type="radio" name="q48" value="c" /> Scatter plot</label>
+              <label><input type="radio" name="q48" value="d" /> Pie chart</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Scatter plots show the relationship between two continuous variables.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>49. Which metric measures consistency (spread)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q49" value="a" /> Mean</label>
+              <label><input type="radio" name="q49" value="b" /> Mode</label>
+              <label><input type="radio" name="q49" value="c" /> Standard deviation</label>
+              <label><input type="radio" name="q49" value="d" /> Median</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Standard deviation measures how spread out the data is around the mean.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>50. EDA helps generate:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q50" value="a" /> Final models</label>
+              <label><input type="radio" name="q50" value="b" /> New hypotheses</label>
+              <label><input type="radio" name="q50" value="c" /> Clean data</label>
+              <label><input type="radio" name="q50" value="d" /> Encoded features</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Exploration often leads to new questions and hypotheses.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>51. Pair plots are used to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q51" value="a" /> Remove outliers</label>
+              <label><input type="radio" name="q51" value="b" /> Compare variable pairs</label>
+              <label><input type="radio" name="q51" value="c" /> Encode categories</label>
+              <label><input type="radio" name="q51" value="d" /> Normalize data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Pair plots show pairwise relationships between multiple variables.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>52. Seeing patterns that confirm pre-existing beliefs is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q52" value="a" /> Noise</label>
+              <label><input type="radio" name="q52" value="b" /> Bias</label>
+              <label><input type="radio" name="q52" value="c" /> Outliers</label>
+              <label><input type="radio" name="q52" value="d" /> Variance</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">This is confirmation bias, where the analyst interprets data to support existing beliefs.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>53. IQR is calculated using:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q53" value="a" /> Mean</label>
+              <label><input type="radio" name="q53" value="b" /> Mode</label>
+              <label><input type="radio" name="q53" value="c" /> Quartiles</label>
+              <label><input type="radio" name="q53" value="d" /> Variance</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Interquartile Range (IQR) = Q3 - Q1.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>54. Which is NOT part of EDA?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q54" value="a" /> Summarization</label>
+              <label><input type="radio" name="q54" value="b" /> Visualization</label>
+              <label><input type="radio" name="q54" value="c" /> Interpretation</label>
+              <label><input type="radio" name="q54" value="d" /> Deployment</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Deployment is a later stage after modeling, not part of EDA.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>55. Which visualization compares categorical frequencies?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q55" value="a" /> Scatter plot</label>
+              <label><input type="radio" name="q55" value="b" /> Histogram</label>
+              <label><input type="radio" name="q55" value="c" /> Bar chart</label>
+              <label><input type="radio" name="q55" value="d" /> Line plot</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Bar charts are ideal for comparing counts across categories.</p>
+          </article>
+
+          <!-- Statistical Analysis Questions (56-75) -->
+          <article class="question" data-answer="c">
+            <h2>56. Which type of statistics summarizes data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q56" value="a" /> Inferential</label>
+              <label><input type="radio" name="q56" value="b" /> Predictive</label>
+              <label><input type="radio" name="q56" value="c" /> Descriptive</label>
+              <label><input type="radio" name="q56" value="d" /> Prescriptive</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Descriptive statistics summarize and describe data features.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>57. Which type of statistics uses samples to draw conclusions about a population?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q57" value="a" /> Descriptive</label>
+              <label><input type="radio" name="q57" value="b" /> Inferential</label>
+              <label><input type="radio" name="q57" value="c" /> Visual</label>
+              <label><input type="radio" name="q57" value="d" /> Exploratory</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Inferential statistics make predictions or inferences about a population from a sample.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>58. Which measure is least affected by extreme values?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q58" value="a" /> Mean</label>
+              <label><input type="radio" name="q58" value="b" /> Mode</label>
+              <label><input type="radio" name="q58" value="c" /> Median</label>
+              <label><input type="radio" name="q58" value="d" /> Range</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Median is resistant to outliers; mean is heavily influenced by them.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>59. Which statistic measures variability in data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q59" value="a" /> Mean</label>
+              <label><input type="radio" name="q59" value="b" /> Median</label>
+              <label><input type="radio" name="q59" value="c" /> Standard deviation</label>
+              <label><input type="radio" name="q59" value="d" /> Mode</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Standard deviation quantifies the amount of variation in a dataset.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>60. What is a sample in statistics?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q60" value="a" /> Entire population</label>
+              <label><input type="radio" name="q60" value="b" /> Random error</label>
+              <label><input type="radio" name="q60" value="c" /> Subset of population</label>
+              <label><input type="radio" name="q60" value="d" /> Statistical model</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A sample is a smaller, manageable subset of the population.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>61. Which level of measurement is gender?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q61" value="a" /> Ordinal</label>
+              <label><input type="radio" name="q61" value="b" /> Interval</label>
+              <label><input type="radio" name="q61" value="c" /> Ratio</label>
+              <label><input type="radio" name="q61" value="d" /> Nominal</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Gender is a categorical variable with no inherent order (nominal).</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>62. Which level of measurement has a true zero?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q62" value="a" /> Nominal</label>
+              <label><input type="radio" name="q62" value="b" /> Ordinal</label>
+              <label><input type="radio" name="q62" value="c" /> Interval</label>
+              <label><input type="radio" name="q62" value="d" /> Ratio</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ratio scales have an absolute zero, where zero means "none."</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>63. What does a small standard deviation indicate?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q63" value="a" /> Data is highly spread</label>
+              <label><input type="radio" name="q63" value="b" /> Data is skewed</label>
+              <label><input type="radio" name="q63" value="c" /> Data is clustered near the mean</label>
+              <label><input type="radio" name="q63" value="d" /> Presence of outliers</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A small standard deviation means data points are close to the mean.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>64. What does the null hypothesis (H₀) represent?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q64" value="a" /> Desired result</label>
+              <label><input type="radio" name="q64" value="b" /> No effect or no difference</label>
+              <label><input type="radio" name="q64" value="c" /> Researcher's belief</label>
+              <label><input type="radio" name="q64" value="d" /> Final conclusion</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The null hypothesis is the default assumption that there is no effect or difference.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>65. Which value is commonly used as a significance level (α)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q65" value="a" /> 0.5</label>
+              <label><input type="radio" name="q65" value="b" /> 0.1</label>
+              <label><input type="radio" name="q65" value="c" /> 0.05</label>
+              <label><input type="radio" name="q65" value="d" /> 0.01 only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">0.05 is the standard threshold for statistical significance.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>66. Rejecting the null hypothesis means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q66" value="a" /> H₀ is true</label>
+              <label><input type="radio" name="q66" value="b" /> No statistical evidence</label>
+              <label><input type="radio" name="q66" value="c" /> Evidence supports H₁</label>
+              <label><input type="radio" name="q66" value="d" /> Sample is incorrect</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Rejecting H₀ provides evidence in favor of the alternative hypothesis (H₁).</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>67. What does a confidence interval represent?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q67" value="a" /> Exact population value</label>
+              <label><input type="radio" name="q67" value="b" /> Range likely containing population parameter</label>
+              <label><input type="radio" name="q67" value="c" /> Sample mean only</label>
+              <label><input type="radio" name="q67" value="d" /> Probability of error</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A confidence interval gives a range where the true population parameter is likely to fall.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>68. Correlation coefficient values range between:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q68" value="a" /> 0 and 1</label>
+              <label><input type="radio" name="q68" value="b" /> -1 and 0</label>
+              <label><input type="radio" name="q68" value="c" /> -1 and +1</label>
+              <label><input type="radio" name="q68" value="d" /> 0 and +∞</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation ranges from -1 (perfect negative) to +1 (perfect positive).</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>69. Correlation does NOT imply:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q69" value="a" /> Association</label>
+              <label><input type="radio" name="q69" value="b" /> Relationship</label>
+              <label><input type="radio" name="q69" value="c" /> Causation</label>
+              <label><input type="radio" name="q69" value="d" /> Trend</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Correlation indicates a relationship, but it does not prove that one variable causes the other.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>70. In regression, the variable being predicted is called the:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q70" value="a" /> Independent</label>
+              <label><input type="radio" name="q70" value="b" /> Control</label>
+              <label><input type="radio" name="q70" value="c" /> Dependent</label>
+              <label><input type="radio" name="q70" value="d" /> Random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The dependent variable is the outcome we are trying to predict.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>71. What does ANOVA test?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q71" value="a" /> Correlation</label>
+              <label><input type="radio" name="q71" value="b" /> Variance equality</label>
+              <label><input type="radio" name="q71" value="c" /> Difference between means of multiple groups</label>
+              <label><input type="radio" name="q71" value="d" /> Data normality</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">ANOVA (Analysis of Variance) tests if there are statistically significant differences between the means of three or more groups.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>72. Which chart best shows data distribution?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q72" value="a" /> Pie chart</label>
+              <label><input type="radio" name="q72" value="b" /> Histogram</label>
+              <label><input type="radio" name="q72" value="c" /> Scatter plot</label>
+              <label><input type="radio" name="q72" value="d" /> Line graph</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Histograms show the frequency distribution of a continuous variable.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>73. Which plot best detects outliers?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q73" value="a" /> Bar chart</label>
+              <label><input type="radio" name="q73" value="b" /> Boxplot</label>
+              <label><input type="radio" name="q73" value="c" /> Line plot</label>
+              <label><input type="radio" name="q73" value="d" /> Pie chart</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Boxplots visually display outliers as points beyond the whiskers.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>74. Which mistake is common in statistical analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q74" value="a" /> Using samples</label>
+              <label><input type="radio" name="q74" value="b" /> Interpreting correlation as causation</label>
+              <label><input type="radio" name="q74" value="c" /> Calculating mean</label>
+              <label><input type="radio" name="q74" value="d" /> Drawing charts</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Assuming causation from correlation is a fundamental logical error.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>75. Which factor most affects inferential accuracy?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q75" value="a" /> Chart color</label>
+              <label><input type="radio" name="q75" value="b" /> Sample size</label>
+              <label><input type="radio" name="q75" value="c" /> File format</label>
+              <label><input type="radio" name="q75" value="d" /> Data type</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Larger sample sizes generally lead to more accurate and reliable inferences.</p>
+          </article>
+
+          <!-- Predictive Data Analysis Questions (76-95) -->
+          <article class="question" data-answer="c">
+            <h2>76. What is predictive data analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q76" value="a" /> Describing past data</label>
+              <label><input type="radio" name="q76" value="b" /> Visualizing current data</label>
+              <label><input type="radio" name="q76" value="c" /> Using data to predict future outcomes</label>
+              <label><input type="radio" name="q76" value="d" /> Cleaning datasets</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The core of predictive analysis is forecasting future events.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>77. Predictive analysis mainly uses:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q77" value="a" /> Random guesses</label>
+              <label><input type="radio" name="q77" value="b" /> Historical data</label>
+              <label><input type="radio" name="q77" value="c" /> Manual decisions</label>
+              <label><input type="radio" name="q77" value="d" /> Visualization only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It relies on past data to identify patterns for future predictions.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>78. Predictions are:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q78" value="a" /> Always accurate</label>
+              <label><input type="radio" name="q78" value="b" /> Guaranteed</label>
+              <label><input type="radio" name="q78" value="c" /> Probabilistic</label>
+              <label><input type="radio" name="q78" value="d" /> Random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Predictions are estimates with associated probabilities, not certainties.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>79. Spam vs Not Spam is an example of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q79" value="a" /> Forecasting</label>
+              <label><input type="radio" name="q79" value="b" /> Regression</label>
+              <label><input type="radio" name="q79" value="c" /> Classification</label>
+              <label><input type="radio" name="q79" value="d" /> Clustering</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Classifying emails into categories (spam/not spam) is a classification task.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>80. What is the first step in a predictive analysis workflow?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q80" value="a" /> Model training</label>
+              <label><input type="radio" name="q80" value="b" /> Data preparation</label>
+              <label><input type="radio" name="q80" value="c" /> Define objective</label>
+              <label><input type="radio" name="q80" value="d" /> Evaluation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Clearly defining the business or research objective is the essential first step.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>81. Splitting data into training and test sets helps to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q81" value="a" /> Increase accuracy artificially</label>
+              <label><input type="radio" name="q81" value="b" /> Avoid overfitting</label>
+              <label><input type="radio" name="q81" value="c" /> Clean data</label>
+              <label><input type="radio" name="q81" value="d" /> Visualize results</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The test set evaluates how well the model generalizes to unseen data, preventing overfitting.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>82. Using a model in real-world applications is called:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q82" value="a" /> Validation</label>
+              <label><input type="radio" name="q82" value="b" /> Training</label>
+              <label><input type="radio" name="q82" value="c" /> Deployment</label>
+              <label><input type="radio" name="q82" value="d" /> Cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Deployment is the process of putting a model into production use.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>83. Linear regression is mainly used to predict:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q83" value="a" /> Categories</label>
+              <label><input type="radio" name="q83" value="b" /> Images</label>
+              <label><input type="radio" name="q83" value="c" /> Numerical values</label>
+              <label><input type="radio" name="q83" value="d" /> Text</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Linear regression predicts continuous numerical outcomes.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>84. Logistic regression predicts:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q84" value="a" /> Exact numbers</label>
+              <label><input type="radio" name="q84" value="b" /> Continuous values</label>
+              <label><input type="radio" name="q84" value="c" /> Categories</label>
+              <label><input type="radio" name="q84" value="d" /> Clusters</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Logistic regression is used for binary or multi-class classification.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>85. Time series analysis is used when data:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q85" value="a" /> Is categorical</label>
+              <label><input type="radio" name="q85" value="b" /> Has no order</label>
+              <label><input type="radio" name="q85" value="c" /> Changes over time</label>
+              <label><input type="radio" name="q85" value="d" /> Is unstructured</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Time series data is indexed by time, and analysis focuses on temporal patterns.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>86. Decision Trees work based on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q86" value="a" /> Mathematical equations</label>
+              <label><input type="radio" name="q86" value="b" /> If–Else rules</label>
+              <label><input type="radio" name="q86" value="c" /> Probabilities only</label>
+              <label><input type="radio" name="q86" value="d" /> Random guesses</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Decision trees split data using a series of hierarchical if-else rules.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>87. Random Forest improves accuracy by:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q87" value="a" /> Using one tree</label>
+              <label><input type="radio" name="q87" value="b" /> Ignoring data</label>
+              <label><input type="radio" name="q87" value="c" /> Combining multiple trees</label>
+              <label><input type="radio" name="q87" value="d" /> Removing features</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It's an ensemble method that averages the predictions of many decision trees.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>88. Which model is best for complex patterns like images?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q88" value="a" /> Linear regression</label>
+              <label><input type="radio" name="q88" value="b" /> Neural networks</label>
+              <label><input type="radio" name="q88" value="c" /> Time series</label>
+              <label><input type="radio" name="q88" value="d" /> Correlation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Neural networks (deep learning) excel at capturing complex, non-linear patterns in data like images.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>89. Ensemble methods mean:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q89" value="a" /> One model only</label>
+              <label><input type="radio" name="q89" value="b" /> No models</label>
+              <label><input type="radio" name="q89" value="c" /> Combining multiple models</label>
+              <label><input type="radio" name="q89" value="d" /> Data cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Ensemble methods combine several base models to improve performance.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>90. Which metric is used for evaluating classification models?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q90" value="a" /> RMSE</label>
+              <label><input type="radio" name="q90" value="b" /> MAE</label>
+              <label><input type="radio" name="q90" value="c" /> Accuracy</label>
+              <label><input type="radio" name="q90" value="d" /> R²</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Accuracy measures the proportion of correct predictions in classification.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>91. Which metric is used for evaluating regression models?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q91" value="a" /> Accuracy</label>
+              <label><input type="radio" name="q91" value="b" /> Recall</label>
+              <label><input type="radio" name="q91" value="c" /> RMSE</label>
+              <label><input type="radio" name="q91" value="d" /> F1-score</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Root Mean Squared Error (RMSE) is a common metric for regression error.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>92. What does a lower RMSE indicate?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q92" value="a" /> Worse model</label>
+              <label><input type="radio" name="q92" value="b" /> Better model</label>
+              <label><input type="radio" name="q92" value="c" /> Larger errors</label>
+              <label><input type="radio" name="q92" value="d" /> No relationship</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A lower RMSE indicates smaller prediction errors, hence a better model.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>93. Which Python library is commonly used for building predictive models?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q93" value="a" /> NumPy</label>
+              <label><input type="radio" name="q93" value="b" /> Scikit-learn</label>
+              <label><input type="radio" name="q93" value="c" /> Matplotlib only</label>
+              <label><input type="radio" name="q93" value="d" /> Excel</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Scikit-learn is the primary Python library for traditional machine learning algorithms.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>94. Overfitting means:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q94" value="a" /> Model performs well on new data</label>
+              <label><input type="radio" name="q94" value="b" /> Model memorizes training data</label>
+              <label><input type="radio" name="q94" value="c" /> Model ignores training data</label>
+              <label><input type="radio" name="q94" value="d" /> Model is random</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">An overfit model learns the noise in the training data and fails to generalize.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>95. Ethical concerns in predictive analysis primarily include:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q95" value="a" /> File size</label>
+              <label><input type="radio" name="q95" value="b" /> Bias</label>
+              <label><input type="radio" name="q95" value="c" /> Chart color</label>
+              <label><input type="radio" name="q95" value="d" /> Storage</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Algorithmic bias can lead to unfair or discriminatory predictions.</p>
+          </article>
+
+          <!-- Data Analysis Tools & Software Questions (96-107) -->
+          <article class="question" data-answer="c">
+            <h2>96. Which tool is best for small datasets and basic analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q96" value="a" /> Hadoop</label>
+              <label><input type="radio" name="q96" value="b" /> Spark</label>
+              <label><input type="radio" name="q96" value="c" /> Excel</label>
+              <label><input type="radio" name="q96" value="d" /> SQL Server</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Excel is user-friendly and suitable for small to medium-sized datasets.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>97. Which programming language is widely used for data analysis and machine learning?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q97" value="a" /> HTML</label>
+              <label><input type="radio" name="q97" value="b" /> Python</label>
+              <label><input type="radio" name="q97" value="c" /> CSS</label>
+              <label><input type="radio" name="q97" value="d" /> PHP</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Python is the leading language due to its rich ecosystem of data science libraries.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>98. Pandas is a:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q98" value="a" /> Database</label>
+              <label><input type="radio" name="q98" value="b" /> Python library</label>
+              <label><input type="radio" name="q98" value="c" /> BI tool</label>
+              <label><input type="radio" name="q98" value="d" /> Spreadsheet</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Pandas is a Python library for data manipulation and analysis.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>99. Which Python library is used for numerical computation?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q99" value="a" /> Pandas</label>
+              <label><input type="radio" name="q99" value="b" /> NumPy</label>
+              <label><input type="radio" name="q99" value="c" /> Seaborn</label>
+              <label><input type="radio" name="q99" value="d" /> Tableau</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">NumPy provides support for large, multi-dimensional arrays and matrices.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>100. R language is mainly used for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q100" value="a" /> Web development</label>
+              <label><input type="radio" name="q100" value="b" /> Game design</label>
+              <label><input type="radio" name="q100" value="c" /> Statistical analysis</label>
+              <label><input type="radio" name="q100" value="d" /> Networking</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">R is a language and environment specifically designed for statistical computing.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>101. SQL is mainly used to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q101" value="a" /> Design websites</label>
+              <label><input type="radio" name="q101" value="b" /> Analyze images</label>
+              <label><input type="radio" name="q101" value="c" /> Query databases</label>
+              <label><input type="radio" name="q101" value="d" /> Build dashboards</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL (Structured Query Language) is used to communicate with and manipulate databases.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>102. Which tool is designed for big data processing?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q102" value="a" /> Excel</label>
+              <label><input type="radio" name="q102" value="b" /> Power BI</label>
+              <label><input type="radio" name="q102" value="c" /> Hadoop</label>
+              <label><input type="radio" name="q102" value="d" /> Google Docs</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Hadoop is a framework for distributed storage and processing of very large datasets.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>103. Power BI and Tableau are examples of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q103" value="a" /> Programming languages</label>
+              <label><input type="radio" name="q103" value="b" /> Database tools</label>
+              <label><input type="radio" name="q103" value="c" /> BI tools</label>
+              <label><input type="radio" name="q103" value="d" /> Big data tools</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">They are Business Intelligence (BI) tools for visualization and reporting.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>104. BI tools are mainly used for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q104" value="a" /> Coding</label>
+              <label><input type="radio" name="q104" value="b" /> Data storage</label>
+              <label><input type="radio" name="q104" value="c" /> Visualization and reporting</label>
+              <label><input type="radio" name="q104" value="d" /> Data cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The primary function of BI tools is to create interactive dashboards and reports.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>105. Which tool is best for creating interactive dashboards?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q105" value="a" /> SQL</label>
+              <label><input type="radio" name="q105" value="b" /> Python</label>
+              <label><input type="radio" name="q105" value="c" /> Power BI</label>
+              <label><input type="radio" name="q105" value="d" /> Hadoop</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Power BI is specifically built for creating and sharing interactive business dashboards.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>106. Which tool is essential for querying relational databases?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q106" value="a" /> Excel</label>
+              <label><input type="radio" name="q106" value="b" /> SQL</label>
+              <label><input type="radio" name="q106" value="c" /> Tableau</label>
+              <label><input type="radio" name="q106" value="d" /> Hadoop</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is the standard language for querying relational database management systems.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>107. Tool selection depends mainly on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q107" value="a" /> Tool popularity</label>
+              <label><input type="radio" name="q107" value="b" /> Data size and analysis goal</label>
+              <label><input type="radio" name="q107" value="c" /> Color themes</label>
+              <label><input type="radio" name="q107" value="d" /> Internet speed</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The right tool depends on factors like data volume, structure, and the task (e.g., exploration vs. reporting).</p>
+          </article>
+
+          <!-- Communicating Results Questions (108-119) -->
+          <article class="question" data-answer="b">
+            <h2>108. What should you consider first when presenting results?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q108" value="a" /> The software you will use.</label>
+              <label><input type="radio" name="q108" value="b" /> The audience (technical vs. non-technical).</label>
+              <label><input type="radio" name="q108" value="c" /> The length of the report.</label>
+              <label><input type="radio" name="q108" value="d" /> The number of charts.</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Tailoring the message to the audience's knowledge level is the most critical first step.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>109. Which of the following is NOT a recommended section in a written report?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q109" value="a" /> Executive Summary</label>
+              <label><input type="radio" name="q109" value="b" /> Methodology</label>
+              <label><input type="radio" name="q109" value="c" /> Key Findings</label>
+              <label><input type="radio" name="q109" value="d" /> Personal Opinions</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Reports should be objective and data-driven, not based on personal opinions.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>110. What type of chart is best for showing trends over time?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q110" value="a" /> Bar chart</label>
+              <label><input type="radio" name="q110" value="b" /> Line chart</label>
+              <label><input type="radio" name="q110" value="c" /> Scatter plot</label>
+              <label><input type="radio" name="q110" value="d" /> Heatmap</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Line charts effectively display changes in a variable over continuous time intervals.</p>
+          </article>
+
+          <article class="question" data-answer="a">
+            <h2>111. Which visualization is most suitable for comparing categories?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q111" value="a" /> Bar chart</label>
+              <label><input type="radio" name="q111" value="b" /> Line chart</label>
+              <label><input type="radio" name="q111" value="c" /> Pie chart</label>
+              <label><input type="radio" name="q111" value="d" /> Heatmap</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Bar charts are the standard for comparing quantities across different categories.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>112. What is a key rule for data visualization?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q112" value="a" /> Use as many colors as possible.</label>
+              <label><input type="radio" name="q112" value="b" /> Include all data points in one chart.</label>
+              <label><input type="radio" name="q112" value="c" /> Choose the right chart for the message.</label>
+              <label><input type="radio" name="q112" value="d" /> Always use 3D effects.</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The chart type must align with the story you want to tell and the data you have.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>113. What is storytelling with data?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q113" value="a" /> Adding fictional elements to reports.</label>
+              <label><input type="radio" name="q113" value="b" /> Creating a narrative that connects data to decisions.</label>
+              <label><input type="radio" name="q113" value="c" /> Using only text in presentations.</label>
+              <label><input type="radio" name="q113" value="d" /> Making data look artistic.</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Storytelling structures insights into a compelling narrative (context, conflict, resolution, action) to drive action.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>114. Which audience would care most about ROI (Return on Investment)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q114" value="a" /> Data scientists</label>
+              <label><input type="radio" name="q114" value="b" /> Business executives</label>
+              <label><input type="radio" name="q114" value="c" /> Engineers</label>
+              <label><input type="radio" name="q114" value="d" /> Researchers</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Business leaders focus on the bottom-line impact and financial implications.</p>
+          </article>
+
+          <article class="question" data-answer="a">
+            <h2>115. What is a common mistake when communicating with non-technical audiences?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q115" value="a" /> Using too much jargon</label>
+              <label><input type="radio" name="q115" value="b" /> Using simple language</label>
+              <label><input type="radio" name="q115" value="c" /> Including recommendations</label>
+              <label><input type="radio" name="q115" value="d" /> Adding visuals</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Technical jargon creates a barrier to understanding for non-experts.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>116. What is the purpose of a dashboard?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q116" value="a" /> To replace written reports entirely.</label>
+              <label><input type="radio" name="q116" value="b" /> To allow interactive exploration of data.</label>
+              <label><input type="radio" name="q116" value="c" /> To make presentations longer.</label>
+              <label><input type="radio" name="q116" value="d" /> To hide data from stakeholders.</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Dashboards provide an at-a-glance view and enable users to filter and drill down into data.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>117. Which is an example of misleading visualization?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q117" value="a" /> Using a bar chart for comparisons.</label>
+              <label><input type="radio" name="q117" value="b" /> Truncating the y-axis to exaggerate differences.</label>
+              <label><input type="radio" name="q117" value="c" /> Labeling axes clearly.</label>
+              <label><input type="radio" name="q117" value="d" /> Using consistent colors.</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">A truncated y-axis distorts the visual proportion of differences between values.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>118. Which of these is a tool for creating reports with code and visualizations combined?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q118" value="a" /> PowerPoint</label>
+              <label><input type="radio" name="q118" value="b" /> Jupyter Notebooks</label>
+              <label><input type="radio" name="q118" value="c" /> Tableau</label>
+              <label><input type="radio" name="q118" value="d" /> Google Slides</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Jupyter Notebooks allow you to combine executable code, visualizations, and narrative text.</p>
+          </article>
+
+          <article class="question" data-answer="d">
+            <h2>119. What is the final step in the storytelling framework?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q119" value="a" /> Context</label>
+              <label><input type="radio" name="q119" value="b" /> Conflict</label>
+              <label><input type="radio" name="q119" value="c" /> Resolution</label>
+              <label><input type="radio" name="q119" value="d" /> Call to Action</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The Call to Action specifies what the audience should do with the insights presented.</p>
+          </article>
+
+          <!-- Applications & Future Trends Questions (120-131) -->
+          <article class="question" data-answer="c">
+            <h2>120. What is the main focus of the applications chapter?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q120" value="a" /> Detailed coding techniques</label>
+              <label><input type="radio" name="q120" value="b" /> Historical development of statistics</label>
+              <label><input type="radio" name="q120" value="c" /> Real-world applications and future trends of data analysis</label>
+              <label><input type="radio" name="q120" value="d" /> Data collection methods only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The chapter covers how data analysis is used across industries and emerging technologies.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>121. In which industry is anomaly detection commonly used for fraud detection?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q121" value="a" /> Healthcare</label>
+              <label><input type="radio" name="q121" value="b" /> Entertainment</label>
+              <label><input type="radio" name="q121" value="c" /> Finance & Banking</label>
+              <label><input type="radio" name="q121" value="d" /> Agriculture</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Banks and credit card companies use anomaly detection to identify fraudulent transactions.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>122. Which technology is central to precision farming?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q122" value="a" /> Quantum computing</label>
+              <label><input type="radio" name="q122" value="b" /> Internet of Things (IoT)</label>
+              <label><input type="radio" name="q122" value="c" /> Blockchain</label>
+              <label><input type="radio" name="q122" value="d" /> Virtual Reality</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">IoT sensors collect real-time data on soil moisture, crop health, etc., for precision agriculture.</p>
+          </article>
+
+          <article class="question" data-answer="a">
+            <h2>123. What does "data democratization" refer to?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q123" value="a" /> Making data analysis tools accessible to non-technical users</label>
+              <label><input type="radio" name="q123" value="b" /> Storing data in the cloud</label>
+              <label><input type="radio" name="q123" value="c" /> Using only open-source software</label>
+              <label><input type="radio" name="q123" value="d" /> Eliminating all data privacy laws</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It's about empowering business users with self-service analytics tools (e.g., Tableau, Power BI).</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>124. What is Explainable AI (XAI)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q124" value="a" /> Faster AI models</label>
+              <label><input type="radio" name="q124" value="b" /> AI models that are transparent and interpretable</label>
+              <label><input type="radio" name="q124" value="c" /> AI that works without the internet</label>
+              <label><input type="radio" name="q124" value="d" /> AI used only for entertainment</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">XAI focuses on making the decisions of complex AI models (like neural networks) understandable to humans.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>125. Which regulation is mentioned in the context of data privacy?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q125" value="a" /> ISO 9001</label>
+              <label><input type="radio" name="q125" value="b" /> GDPR</label>
+              <label><input type="radio" name="q125" value="c" /> TCP/IP</label>
+              <label><input type="radio" name="q125" value="d" /> HTML5</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The General Data Protection Regulation (GDPR) is a major data privacy law from the EU.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>126. How is data analysis applied in smart cities?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q126" value="a" /> Sentiment analysis of social media</label>
+              <label><input type="radio" name="q126" value="b" /> Stock price prediction</label>
+              <label><input type="radio" name="q126" value="c" /> Optimizing public energy consumption</label>
+              <label><input type="radio" name="q126" value="d" /> Product recommendation</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Smart cities use data from sensors to optimize utilities, traffic, and energy use.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>127. Which emerging technology could revolutionize data processing speeds?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q127" value="a" /> IoT</label>
+              <label><input type="radio" name="q127" value="b" /> Quantum computing</label>
+              <label><input type="radio" name="q127" value="c" /> Blockchain</label>
+              <label><input type="radio" name="q127" value="d" /> Augmented Reality</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Quantum computing has the potential to solve specific complex problems exponentially faster than classical computers.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>128. What is the goal of "green data" initiatives?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q128" value="a" /> Increasing energy use</label>
+              <label><input type="radio" name="q128" value="b" /> Enhancing sustainability and climate modeling</label>
+              <label><input type="radio" name="q128" value="c" /> Storing data on paper</label>
+              <label><input type="radio" name="q128" value="d" /> Using green colors in charts</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Green data focuses on using data analytics to promote environmental sustainability and reduce carbon footprints.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>129. What are key ethical challenges in data analysis?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q129" value="a" /> Algorithm speed only</label>
+              <label><input type="radio" name="q129" value="b" /> Balancing personalization with privacy and avoiding bias</label>
+              <label><input type="radio" name="q129" value="c" /> Hardware costs only</label>
+              <label><input type="radio" name="q129" value="d" /> Software usability</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">The core ethical dilemmas involve privacy infringement and algorithmic fairness.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>130. What is the role of Automated Machine Learning (AutoML)?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q130" value="a" /> To replace all programmers</label>
+              <label><input type="radio" name="q130" value="b" /> To reduce the need for manual coding in model building</label>
+              <label><input type="radio" name="q130" value="c" /> To delete data automatically</label>
+              <label><input type="radio" name="q130" value="d" /> To manage databases only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">AutoML automates repetitive tasks in the ML pipeline, making it faster and more accessible.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>131. What does prescriptive analytics aim to do?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q131" value="a" /> Describe past events only</label>
+              <label><input type="radio" name="q131" value="b" /> Predict future outcomes</label>
+              <label><input type="radio" name="q131" value="c" /> Recommend specific actions to take</label>
+              <label><input type="radio" name="q131" value="d" /> Collect raw data only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">It goes beyond prediction to suggest optimal decisions based on the predicted outcomes.</p>
+          </article>
+        </section>
+        <div class="submit-row">
+          <button id="submit-quiz">Submit quiz</button>
+          <a href="chapters.html" class="chapter-button" style="padding: 0.8rem 1.4rem;">Back to chapters</a>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
