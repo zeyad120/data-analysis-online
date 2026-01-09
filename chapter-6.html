@@ -1,47 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 6 – Data Analysis Tools & Software</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .question {
-            background-color: #f8f9fa;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-        }
-        .answer {
-            color: #27ae60;
-            font-weight: bold;
-        }
-        .explanation {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-top: 5px;
-        }
-        .options {
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>📘 Chapter 6 – Data Analysis Tools & Software</h1>
-    <p><strong>📝 25 MCQs (Normal Level)</strong></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis – Chapter Six</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+    <main>
+      <div class="container">
+        <header class="hero">
+          <p class="name-banner" id="name-banner"></p>
+          <h1>Chapter Six: Data Analysis Tools & Software</h1>
+        </header>
+        <section class="quiz-questions">
+          <article class="question" data-answer="c">
+            <h2>1. What is the main purpose of data analysis tools?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="a" /> Data storage only</label>
+              <label><input type="radio" name="q1" value="b" /> Data collection only</label>
+              <label><input type="radio" name="q1" value="c" /> Data analysis and decision support</label>
+              <label><input type="radio" name="q1" value="d" /> Graphic design</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Tools help analyze data and support decision-making.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>2. Which tool is best for small datasets?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="a" /> Hadoop</label>
+              <label><input type="radio" name="q2" value="b" /> Spark</label>
+              <label><input type="radio" name="q2" value="c" /> Excel</label>
+              <label><input type="radio" name="q2" value="d" /> SQL Server</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Excel is suitable for small datasets.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>3. Excel is classified as:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="a" /> Programming language</label>
+              <label><input type="radio" name="q3" value="b" /> BI tool</label>
+              <label><input type="radio" name="q3" value="c" /> Spreadsheet tool</label>
+              <label><input type="radio" name="q3" value="d" /> Big data tool</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Excel is a spreadsheet application.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>4. Which language is widely used for data analysis and machine learning?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q4" value="a" /> HTML</label>
+              <label><input type="radio" name="q4" value="b" /> Python</label>
+              <label><input type="radio" name="q4" value="c" /> CSS</label>
+              <label><input type="radio" name="q4" value="d" /> PHP</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Python is popular for data analysis and ML.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>5. Pandas is a:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q5" value="a" /> Database</label>
+              <label><input type="radio" name="q5" value="b" /> Python library</label>
+              <label><input type="radio" name="q5" value="c" /> BI tool</label>
+              <label><input type="radio" name="q5" value="d" /> Spreadsheet</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Pandas is a Python library for data manipulation.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>6. Which Python library is used for numerical computation?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q6" value="a" /> Pandas</label>
+              <label><input type="radio" name="q6" value="b" /> NumPy</label>
+              <label><input type="radio" name="q6" value="c" /> Seaborn</label>
+              <label><input type="radio" name="q6" value="d" /> Tableau</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">NumPy handles numerical operations.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>7. R language is mainly used for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q7" value="a" /> Web development</label>
+              <label><input type="radio" name="q7" value="b" /> Game design</label>
+              <label><input type="radio" name="q7" value="c" /> Statistical analysis</label>
+              <label><input type="radio" name="q7" value="d" /> Networking</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">R is strong in statistics and research.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>8. SQL is mainly used to:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q8" value="a" /> Design websites</label>
+              <label><input type="radio" name="q8" value="b" /> Analyze images</label>
+              <label><input type="radio" name="q8" value="c" /> Query databases</label>
+              <label><input type="radio" name="q8" value="d" /> Build dashboards</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is used to retrieve and manage database data.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>9. SQL works best with:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q9" value="a" /> Unstructured data</label>
+              <label><input type="radio" name="q9" value="b" /> Images</label>
+              <label><input type="radio" name="q9" value="c" /> Structured data</label>
+              <label><input type="radio" name="q9" value="d" /> Audio data</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is designed for structured data.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>10. Which tool is designed for big data processing?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q10" value="a" /> Excel</label>
+              <label><input type="radio" name="q10" value="b" /> Power BI</label>
+              <label><input type="radio" name="q10" value="c" /> Hadoop</label>
+              <label><input type="radio" name="q10" value="d" /> Google Docs</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Hadoop processes very large datasets.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>11. Hadoop stores data using:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q11" value="a" /> SQL</label>
+              <label><input type="radio" name="q11" value="b" /> HDFS</label>
+              <label><input type="radio" name="q11" value="c" /> CSV</label>
+              <label><input type="radio" name="q11" value="d" /> Excel</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Hadoop uses HDFS for storage.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>12. Spark is preferred over Hadoop because it is:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q12" value="a" /> Cheaper</label>
+              <label><input type="radio" name="q12" value="b" /> Slower</label>
+              <label><input type="radio" name="q12" value="c" /> Faster</label>
+              <label><input type="radio" name="q12" value="d" /> Smaller</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Spark is faster due to in-memory processing.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>13. Power BI and Tableau are examples of:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q13" value="a" /> Programming languages</label>
+              <label><input type="radio" name="q13" value="b" /> Database tools</label>
+              <label><input type="radio" name="q13" value="c" /> BI tools</label>
+              <label><input type="radio" name="q13" value="d" /> Big data tools</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">They are Business Intelligence tools.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>14. BI tools are mainly used for:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q14" value="a" /> Coding</label>
+              <label><input type="radio" name="q14" value="b" /> Data storage</label>
+              <label><input type="radio" name="q14" value="c" /> Visualization and reporting</label>
+              <label><input type="radio" name="q14" value="d" /> Data cleaning</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">BI tools create dashboards and reports.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>15. Which tool is best for creating dashboards?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q15" value="a" /> SQL</label>
+              <label><input type="radio" name="q15" value="b" /> Python</label>
+              <label><input type="radio" name="q15" value="c" /> Power BI</label>
+              <label><input type="radio" name="q15" value="d" /> Hadoop</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Power BI is designed for dashboards.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>16. Which tool does NOT require programming knowledge?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q16" value="a" /> Python</label>
+              <label><input type="radio" name="q16" value="b" /> R</label>
+              <label><input type="radio" name="q16" value="c" /> Excel</label>
+              <label><input type="radio" name="q16" value="d" /> SQL</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Excel can be used without coding.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>17. Which tool is essential for any data analyst?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q17" value="a" /> Photoshop</label>
+              <label><input type="radio" name="q17" value="b" /> SQL</label>
+              <label><input type="radio" name="q17" value="c" /> Blender</label>
+              <label><input type="radio" name="q17" value="d" /> Figma</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is a core skill for data analysts.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>18. Which library is used for data visualization in Python?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q18" value="a" /> NumPy</label>
+              <label><input type="radio" name="q18" value="b" /> Pandas</label>
+              <label><input type="radio" name="q18" value="c" /> Matplotlib</label>
+              <label><input type="radio" name="q18" value="d" /> SQL</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Matplotlib creates charts and plots.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>19. Tools selection depends mainly on:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q19" value="a" /> Tool popularity</label>
+              <label><input type="radio" name="q19" value="b" /> Data size and analysis goal</label>
+              <label><input type="radio" name="q19" value="c" /> Color themes</label>
+              <label><input type="radio" name="q19" value="d" /> Internet speed</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Different problems need different tools.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>20. Which tool is best for querying relational databases?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q20" value="a" /> Excel</label>
+              <label><input type="radio" name="q20" value="b" /> SQL</label>
+              <label><input type="radio" name="q20" value="c" /> Tableau</label>
+              <label><input type="radio" name="q20" value="d" /> Hadoop</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">SQL is optimized for queries.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>21. Which tool is open-source?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q21" value="a" /> Excel</label>
+              <label><input type="radio" name="q21" value="b" /> Power BI</label>
+              <label><input type="radio" name="q21" value="c" /> Python</label>
+              <label><input type="radio" name="q21" value="d" /> Tableau</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Python is open-source.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>22. Big data tools are used when:</h2>
+            <div class="choices">
+              <label><input type="radio" name="q22" value="a" /> Data is small</label>
+              <label><input type="radio" name="q22" value="b" /> Data fits in Excel</label>
+              <label><input type="radio" name="q22" value="c" /> Data is extremely large</label>
+              <label><input type="radio" name="q22" value="d" /> Data is visual only</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Big data tools handle massive datasets.</p>
+          </article>
+
+          <article class="question" data-answer="a">
+            <h2>23. Which tool is best for statistical research?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q23" value="a" /> R</label>
+              <label><input type="radio" name="q23" value="b" /> Excel</label>
+              <label><input type="radio" name="q23" value="c" /> Hadoop</label>
+              <label><input type="radio" name="q23" value="d" /> Power BI</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">R is widely used in statistics.</p>
+          </article>
+
+          <article class="question" data-answer="c">
+            <h2>24. Which tool combines visualization and reporting?</h2>
+            <div class="choices">
+              <label><input type="radio" name="q24" value="a" /> SQL</label>
+              <label><input type="radio" name="q24" value="b" /> Python</label>
+              <label><input type="radio" name="q24" value="c" /> Power BI</label>
+              <label><input type="radio" name="q24" value="d" /> NumPy</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Power BI provides reports and dashboards.</p>
+          </article>
+
+          <article class="question" data-answer="b">
+            <h2>25. There is one tool that fits all data analysis tasks.</h2>
+            <div class="choices">
+              <label><input type="radio" name="q25" value="a" /> True</label>
+              <label><input type="radio" name="q25" value="b" /> False</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Different tasks require different tools.</p>
+          </article>
 
     <div class="question">
         <p><strong>Q1. What is the main purpose of data analysis tools?</strong></p>
@@ -51,9 +320,15 @@
             <div>C) Data analysis and decision support</div>
             <div>D) Graphic design</div>
         </div>
-        <div class="answer">✅ Answer: C</div>
-        <div class="explanation">🧠 Explanation: Tools help analyze data and support decision-making.</div>
-    </div>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="a" /> Data storage only</label>
+              <label><input type="radio" name="q1" value="b" /> Data collection only</label>
+              <label><input type="radio" name="q1" value="c" /> Data analysis and decision support</label>
+              <label><input type="radio" name="q1" value="d" /> Graphic design</label>
+            </div>
+            <button class="check-answer">Check answer</button>
+            <p class="explanation">Tools help analyze data and support decision-making.</p>
+          </article>
 
     <div class="question">
         <p><strong>Q2. Which tool is best for small datasets?</strong></p>
@@ -339,6 +614,14 @@
         </div>
         <div class="answer">✅ Answer: B</div>
         <div class="explanation">🧠 Explanation: Different tasks require different tools.</div>
-    </div>
-</body>
+        </section>
+        <div class="submit-row">
+          <button id="submit-quiz">Submit quiz</button>
+          <a href="chapters.html" class="chapter-button" style="padding: 0.8rem 1.4rem;">Back to chapters</a>
+        </div>
+        <div id="grade-output"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
