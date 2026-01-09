@@ -1,3 +1,20 @@
+// Function to save quiz state to localStorage
+function saveQuizState(questionId, answer) {
+  const quizState = JSON.parse(localStorage.getItem('quizState') || '{}');
+  quizState[questionId] = answer;
+  localStorage.setItem('quizState', JSON.stringify(quizState));
+}
+
+// Function to load quiz state from localStorage
+function loadQuizState() {
+  return JSON.parse(localStorage.getItem('quizState') || '{}');
+}
+
+// Function to clear quiz state
+function clearQuizState() {
+  localStorage.removeItem('quizState');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.body.dataset.page;
 
@@ -19,6 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!quizSection) {
     return;
   }
+  
+  // Load saved quiz state
+  const savedState = loadQuizState();
+  Object.entries(savedState).forEach(([questionId, answerId]) => {
+    const input = document.querySelector(`#${questionId}_${answerId}`);
+    if (input) {
+      input.checked = true;
+      // Evaluate the question to show correct/incorrect state
+      const question = input.closest('.question');
+      if (question) {
+        evaluateQuestion(question);
+      }
+    }
+  });
 
   const questions = Array.from(document.querySelectorAll('.question'));
   const gradeOutput = document.getElementById('grade-output');
@@ -57,15 +88,32 @@ document.addEventListener('DOMContentLoaded', () => {
     return true;
   };
 
+  // Add event listeners to radio buttons to save state when changed
   questions.forEach((question) => {
     const checkBtn = question.querySelector('.check-answer');
     checkBtn.addEventListener('click', () => evaluateQuestion(question));
+    
+    // Save state when an answer is selected
+    const radioInputs = question.querySelectorAll('input[type="radio"]');
+    radioInputs.forEach(input => {
+      input.addEventListener('change', () => {
+        saveQuizState(question.id, input.value);
+      });
+    });
   });
 
   submitBtn.addEventListener('click', () => {
+    let allAnswered = true;
     questions.forEach((question) => {
-      evaluateQuestion(question);
+      if (!evaluateQuestion(question)) {
+        allAnswered = false;
+      }
     });
+
+    if (!allAnswered) {
+      alert('Please answer all questions before submitting.');
+      return;
+    }
 
     const correctCount = questions.filter((q) => q.dataset.correct === 'true').length;
     const total = questions.length;
@@ -79,8 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
       fetch('http://localhost:3001/api/submissions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, date })
+        body: JSON.stringify({ name, date, score: `${correctCount}/${total}` })
       });
     }
+    
+    // Clear the saved state after successful submission
+    clearQuizState();
   });
 });

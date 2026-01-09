@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Resources - Data Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .resource-list {
+            margin-top: 20px;
+        }
+        .resource-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .resource-item a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-item a:hover {
+            text-decoration: underline;
+        }
+        .file-size {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Course Resources</h1>
+    <p>Access all the course materials and PDFs below:</p>
+    
+    <div class="resource-list">
+        <h2>📖 Chapter PDFs</h2>
+        <!-- PDF links will be added here automatically -->
+        <div id="pdf-list">
+            <!-- PDF links will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // This script will automatically list all PDFs in the pdfs directory
+        document.addEventListener('DOMContentLoaded', function() {
+            const pdfList = document.getElementById('pdf-list');
+            
+                // List of all available PDFs in the directory
+            const pdfs = [
+                { name: 'Chapter 1 - Introduction to Data Analysis', filename: 'Chapter+1+-+introduction+to+Data+Analysis.pdf' },
+                { name: 'Chapter 2 - Data Collection & Preparation', filename: 'Chapter+2+-+Data+Collection%26+Preparation (1).pdf' },
+                { name: 'Chapter 3 - Exploratory Data Analysis (EDA)', filename: 'Chapter 3 - Exploratory Data Analysis (EDA).pdf' },
+                { name: 'Chapter 4 - Statistical Analysis', filename: 'Chapter 4 - Statistical Analysis.pdf' },
+                { name: 'Chapter 5 - Predictive Data Analysis', filename: 'Chapter 5 - Predictive Data Analysis.pdf' },
+                { name: 'Chapter 6 - Data Analysis Tools & Software', filename: 'Chapter 6 - Data Analysis Tools & Software (1).pdf' },
+                { name: 'Chapter 7 - Communicating Results', filename: 'Chapter 7 - Communicating Results.pdf' },
+                { name: 'Chapter 8 - Applications & Future Trends', filename: 'Chapter+8+-+Applications%26+Future+Trends.pdf' }
+            ];
+            
+            // Sort chapters in order
+
+            if (pdfs.length === 0) {
+                pdfList.innerHTML = '<p>No PDFs found in the resources directory.</p>';
+                return;
+            }
+
+            pdfs.forEach(pdf => {
+                const item = document.createElement('div');
+                item.className = 'resource-item';
+                item.innerHTML = `
+                    <a href="pdfs/${pdf.filename}" target="_blank">
+                        ${pdf.name}
+                    </a>
+                    <span class="file-size">(PDF)</span>
+                `;
+                pdfList.appendChild(item);
+            });
+        });
+    </script>
+
+    <div style="margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-radius: 5px; border-left: 4px solid #3498db;">
+        <h3>📌 How to Access</h3>
+        <p>Click on any chapter to view or download the PDF. All materials are available for your reference.</p>
+        <p><strong>Note:</strong> The PDFs are stored in the main website directory. No additional setup is needed.</p>
+    </div>
+</body>
+</html>

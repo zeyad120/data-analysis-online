@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data Analysis Chapters</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .pdf-viewer-btn {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        background-color: #3498db;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .pdf-viewer-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      }
+      .pdf-container {
+        display: none;
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .pdf-container.visible {
+        display: block;
+        animation: fadeIn 0.5s ease;
+      }
+      .pdf-item {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: white;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+      }
+      .pdf-item:hover {
+        transform: translateX(5px);
+      }
+      .pdf-item a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+      .pdf-item a:before {
+        content: '📄';
+        margin-right: 10px;
+        font-size: 1.2em;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body data-page="chapters">
     <main>
@@ -21,9 +84,46 @@
           <a href="chapter-4.html" class="chapter-button">Chapter 4: Statistical Analysis</a>
           <a href="chapter-5.html" class="chapter-button">Chapter 5: Predictive Data Analysis</a>
           <a href="MCQs%20on%20Lectures%201%20%E2%86%92%205%20%28100%20Questions%29.html" class="chapter-button">MCQs on Lectures 1 → 5 (100 Questions)</a>
+          
+          <button id="showPdfsBtn" class="pdf-viewer-btn">📚 View All Chapter PDFs</button>
+          
+          <div id="pdfContainer" class="pdf-container">
+            <h3>Chapter PDFs</h3>
+            <div class="pdf-item">
+              <a href="Chapter+1+-+introduction+to+Data+Analysis.pdf" target="_blank">Chapter 1 - Introduction to Data Analysis</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter+2+-+Data+Collection%26+Preparation%20(1).pdf" target="_blank">Chapter 2 - Data Collection & Preparation</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter 3 - Exploratory Data Analysis (EDA).pdf" target="_blank">Chapter 3 - Exploratory Data Analysis (EDA)</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter 4 - Statistical Analysis.pdf" target="_blank">Chapter 4 - Statistical Analysis</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter 5 - Predictive Data Analysis.pdf" target="_blank">Chapter 5 - Predictive Data Analysis</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter 6 - Data Analysis Tools & Software (1).pdf" target="_blank">Chapter 6 - Data Analysis Tools & Software</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter 7 - Communicating Results.pdf" target="_blank">Chapter 7 - Communicating Results</a>
+            </div>
+            <div class="pdf-item">
+              <a href="Chapter+8+-+Applications%26+Future+Trends.pdf" target="_blank">Chapter 8 - Applications & Future Trends</a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <script>
+      document.getElementById('showPdfsBtn').addEventListener('click', function() {
+        const container = document.getElementById('pdfContainer');
+        container.classList.toggle('visible');
+        this.textContent = container.classList.contains('visible') ? '📚 Hide PDFs' : '📚 View All Chapter PDFs';
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
